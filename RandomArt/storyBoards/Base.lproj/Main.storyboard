@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A4e-mF-5BR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A4e-mF-5BR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -15,6 +15,7 @@
                     <connections>
                         <segue destination="dqF-DV-QVs" kind="custom" identifier="SideMenu.Menu" customClass="SideMenuSegue" customModule="SideMenuSwift" id="If0-5q-yDv"/>
                         <segue destination="6D8-LF-uzP" kind="custom" identifier="SideMenu.Content" customClass="SideMenuSegue" customModule="SideMenuSwift" id="3Nt-vZ-A0c"/>
+                        <segue destination="bfV-BA-uy1" kind="custom" identifier="SideMenu.Content" customClass="SideMenuSegue" customModule="SideMenuSwift" id="WLY-R5-K8k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqD-AX-duE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -24,61 +25,74 @@
         <!--Landing PageVC-->
         <scene sceneID="IlJ-oP-Ewm">
             <objects>
-                <viewController id="6D8-LF-uzP" customClass="LandingPageVC" customModule="RandomArt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="canvas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6D8-LF-uzP" customClass="LandingPageVC" customModule="RandomArt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A0L-eg-Tde">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWZ-kr-5gJ">
-                                <rect key="frame" x="20" y="77" width="43" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="       " backgroundImage="line.horizontal.3" catalog="system">
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
-                                </state>
-                                <connections>
-                                    <action selector="close:" destination="6D8-LF-uzP" eventType="touchUpInside" id="bg3-kO-WbO"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vc-qD-3bc" customClass="canvasView" customModule="RandomArt" customModuleProvider="target">
-                                <rect key="frame" x="20" y="136" width="374" height="526"/>
-                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vc-qD-3bc" customClass="canvasView" customModule="RandomArt" customModuleProvider="target">
+                                <rect key="frame" x="20" y="113" width="374" height="689"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldq-Vc-vNO">
+                                        <rect key="frame" x="20" y="651" width="20" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="arrow.down.square" catalog="system"/>
+                                        <connections>
+                                            <action selector="saveArtWork:" destination="6D8-LF-uzP" eventType="touchUpInside" id="eHU-vy-e15"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ldq-Vc-vNO" firstAttribute="leading" secondItem="7vc-qD-3bc" secondAttribute="leading" constant="20" id="SAD-8T-fbO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ldq-Vc-vNO" secondAttribute="bottom" constant="8" id="qF9-wg-rOU"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbd-zs-fPg">
-                                <rect key="frame" x="180.5" y="744" width="53" height="38"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Apply">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="1" maxValue="11" minimumValueImage="flame" catalog="system" maximumValueImage="flame.fill" translatesAutoresizingMaskIntoConstraints="NO" id="eAd-Ut-iNc">
+                                <rect key="frame" x="55" y="832" width="304" height="31"/>
+                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Hhv-Dd-EQO"/>
+                                    <constraint firstAttribute="width" constant="300" id="g44-a8-21r"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="generateArt:" destination="6D8-LF-uzP" eventType="touchUpInside" id="rqC-uR-49g"/>
+                                    <action selector="changeComplexity:" destination="6D8-LF-uzP" eventType="valueChanged" id="nTm-YF-lyG"/>
                                 </connections>
-                            </button>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="wbd-zs-fPg" firstAttribute="centerX" secondItem="A0L-eg-Tde" secondAttribute="centerX" id="1c3-pr-HWO"/>
                             <constraint firstItem="wvW-dp-Nxv" firstAttribute="trailing" secondItem="7vc-qD-3bc" secondAttribute="trailing" constant="20" id="9cx-vP-J0C"/>
-                            <constraint firstItem="LWZ-kr-5gJ" firstAttribute="top" secondItem="wvW-dp-Nxv" secondAttribute="top" constant="28" id="B1c-KF-rh0"/>
-                            <constraint firstItem="wbd-zs-fPg" firstAttribute="top" secondItem="7vc-qD-3bc" secondAttribute="bottom" constant="82" id="N5w-DB-WbI"/>
-                            <constraint firstItem="LWZ-kr-5gJ" firstAttribute="leading" secondItem="wvW-dp-Nxv" secondAttribute="leading" constant="20" id="PlO-X1-cXS"/>
+                            <constraint firstItem="eAd-Ut-iNc" firstAttribute="centerX" secondItem="A0L-eg-Tde" secondAttribute="centerX" id="Jnz-Z6-rPU"/>
+                            <constraint firstItem="eAd-Ut-iNc" firstAttribute="leading" secondItem="wvW-dp-Nxv" secondAttribute="leading" constant="57" id="N0v-ON-jCf"/>
+                            <constraint firstItem="eAd-Ut-iNc" firstAttribute="top" secondItem="7vc-qD-3bc" secondAttribute="bottom" constant="30" id="WQn-9e-F9B"/>
                             <constraint firstItem="7vc-qD-3bc" firstAttribute="leading" secondItem="wvW-dp-Nxv" secondAttribute="leading" constant="20" id="fBu-CX-bDf"/>
-                            <constraint firstItem="7vc-qD-3bc" firstAttribute="top" secondItem="LWZ-kr-5gJ" secondAttribute="bottom" constant="20.5" id="hRY-TQ-87a"/>
-                            <constraint firstItem="wvW-dp-Nxv" firstAttribute="bottom" secondItem="7vc-qD-3bc" secondAttribute="bottom" constant="200" id="pSx-7i-UwB"/>
-                            <constraint firstItem="wvW-dp-Nxv" firstAttribute="trailing" secondItem="LWZ-kr-5gJ" secondAttribute="trailing" constant="351" id="uQg-e4-CXU"/>
+                            <constraint firstItem="7vc-qD-3bc" firstAttribute="top" secondItem="wvW-dp-Nxv" secondAttribute="top" constant="69" id="m7z-zL-Mjg"/>
+                            <constraint firstItem="wvW-dp-Nxv" firstAttribute="bottom" secondItem="7vc-qD-3bc" secondAttribute="bottom" constant="60" id="pSx-7i-UwB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wvW-dp-Nxv"/>
                     </view>
                     <connections>
                         <outlet property="canvas" destination="7vc-qD-3bc" id="2ld-NA-gJJ"/>
+                        <outlet property="saveButoon" destination="Ldq-Vc-vNO" id="hEK-BX-za8"/>
+                        <outlet property="slider" destination="eAd-Ut-iNc" id="Xl9-n5-Gl6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDr-oe-zvz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-326.08695652173918" y="0.0"/>
+        </scene>
+        <!--yourWork-->
+        <scene sceneID="0qp-z5-EbB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="yourWork" referencedIdentifier="yourWork" id="bfV-BA-uy1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ks1-ij-byo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562" y="502"/>
         </scene>
         <!--Side MenuVC-->
         <scene sceneID="MSv-0b-1M9">
@@ -97,6 +111,9 @@
                                         <state key="normal" title="Canvas">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="showCanvas:" destination="dqF-DV-QVs" eventType="touchUpInside" id="Qa0-Qp-eAy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faN-iT-10F">
                                         <rect key="frame" x="0.0" y="79" width="90" height="42"/>
@@ -104,6 +121,9 @@
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="showSettings:" destination="dqF-DV-QVs" eventType="touchUpInside" id="5Cd-qK-Epx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-aA-GQj">
                                         <rect key="frame" x="0.0" y="158" width="111" height="42"/>
@@ -111,6 +131,9 @@
                                         <state key="normal" title="Your Work">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="showYourWork:" destination="dqF-DV-QVs" eventType="touchUpInside" id="NPB-Zg-VjR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -129,10 +152,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KaA-cZ-U2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-326.08695652173918" y="758.70535714285711"/>
+            <point key="canvasLocation" x="-1552" y="966"/>
         </scene>
     </scenes>
     <resources>
-        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <image name="arrow.down.square" catalog="system" width="128" height="114"/>
+        <image name="flame" catalog="system" width="109" height="128"/>
+        <image name="flame.fill" catalog="system" width="109" height="128"/>
     </resources>
 </document>

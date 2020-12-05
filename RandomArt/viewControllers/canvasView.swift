@@ -11,7 +11,7 @@ import UIKit
 class canvasView: UIView {
 
     let mycont = 0
-    let DEPTH:Int = 10
+    var DEPTH:Int = 1
 
     var color = UIColor.white.cgColor
     var isNotDrawing  = true
@@ -78,4 +78,8 @@ class canvasView: UIView {
         isNotDrawing = false
         setNeedsDisplay()
     }
+    func changeDepth(with depth: Int){
+        DEPTH = depth
+    }
+    
 }

@@ -3,16 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8FC923A10DFAA5EE94CFD31E /* libPods-RandomArt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C6DB9B7696A038CCB4BE39 /* libPods-RandomArt.a */; };
+		D1A042CD3A8DD316C6AB7390 /* Pods_RandomArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66736AD5C9E92A099F8E51A /* Pods_RandomArt.framework */; };
 		EB7F3F0524E721E1003DCD3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F0424E721E1003DCD3D /* AppDelegate.swift */; };
 		EB7F3F0724E721E1003DCD3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F0624E721E1003DCD3D /* SceneDelegate.swift */; };
 		EB7F3F0924E721E1003DCD3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F0824E721E1003DCD3D /* ViewController.swift */; };
 		EB7F3F0C24E721E1003DCD3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7F3F0A24E721E1003DCD3D /* Main.storyboard */; };
-		EB7F3F0E24E721E2003DCD3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7F3F0D24E721E2003DCD3D /* Assets.xcassets */; };
 		EB7F3F1124E721E2003DCD3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7F3F0F24E721E2003DCD3D /* LaunchScreen.storyboard */; };
 		EB7F3F1C24E721E2003DCD3D /* RandomArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F1B24E721E2003DCD3D /* RandomArtTests.swift */; };
 		EB7F3F2724E721E2003DCD3D /* RandomArtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F2624E721E2003DCD3D /* RandomArtUITests.swift */; };
@@ -22,6 +21,13 @@
 		EB7F3F4724E89841003DCD3D /* MathBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F4624E89841003DCD3D /* MathBinaryTree.swift */; };
 		EB7F3F4924E8987A003DCD3D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F4824E8987A003DCD3D /* Node.swift */; };
 		EB7F3F4B24EBBA02003DCD3D /* canvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F4A24EBBA02003DCD3D /* canvasView.swift */; };
+		EBAD704F24F74A520069ADC1 /* YourWorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD704E24F74A520069ADC1 /* YourWorkVC.swift */; };
+		EBAD705124F859870069ADC1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD705024F859870069ADC1 /* Card.swift */; };
+		EBAE130924F6D97800CCC3D8 /* yourWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAE130824F6D97800CCC3D8 /* yourWork.storyboard */; };
+		EBDDC3DD2501B4870074A5E0 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDDC3DA2501B4870074A5E0 /* CustomLayout.swift */; };
+		EBDDC3DE2501B4870074A5E0 /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDDC3DB2501B4870074A5E0 /* Catalog.swift */; };
+		EBDDC3DF2501B4870074A5E0 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDDC3DC2501B4870074A5E0 /* ProductCell.swift */; };
+		EBFFD2ED2519806E00B1641D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFFD2EC2519806E00B1641D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,15 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		57C6DB9B7696A038CCB4BE39 /* libPods-RandomArt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RandomArt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E1176E7EAF03D3420532E0 /* Pods-RandomArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomArt.release.xcconfig"; path = "Target Support Files/Pods-RandomArt/Pods-RandomArt.release.xcconfig"; sourceTree = "<group>"; };
+		C66736AD5C9E92A099F8E51A /* Pods_RandomArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E595757E0AEFB5B2C91A120E /* Pods-RandomArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomArt.debug.xcconfig"; path = "Target Support Files/Pods-RandomArt/Pods-RandomArt.debug.xcconfig"; sourceTree = "<group>"; };
 		EB7F3F0124E721E1003DCD3D /* RandomArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7F3F0424E721E1003DCD3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB7F3F0624E721E1003DCD3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EB7F3F0824E721E1003DCD3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB7F3F0B24E721E1003DCD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EB7F3F0D24E721E2003DCD3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB7F3F1024E721E2003DCD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB7F3F1224E721E2003DCD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB7F3F1724E721E2003DCD3D /* RandomArtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomArtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +70,13 @@
 		EB7F3F4624E89841003DCD3D /* MathBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathBinaryTree.swift; sourceTree = "<group>"; };
 		EB7F3F4824E8987A003DCD3D /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		EB7F3F4A24EBBA02003DCD3D /* canvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvasView.swift; sourceTree = "<group>"; };
+		EBAD704E24F74A520069ADC1 /* YourWorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourWorkVC.swift; sourceTree = "<group>"; };
+		EBAD705024F859870069ADC1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		EBAE130824F6D97800CCC3D8 /* yourWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = yourWork.storyboard; sourceTree = "<group>"; };
+		EBDDC3DA2501B4870074A5E0 /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		EBDDC3DB2501B4870074A5E0 /* Catalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		EBDDC3DC2501B4870074A5E0 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		EBFFD2EC2519806E00B1641D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FC923A10DFAA5EE94CFD31E /* libPods-RandomArt.a in Frameworks */,
+				D1A042CD3A8DD316C6AB7390 /* Pods_RandomArt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +108,7 @@
 		0115C6B195A681D879C43057 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				57C6DB9B7696A038CCB4BE39 /* libPods-RandomArt.a */,
+				C66736AD5C9E92A099F8E51A /* Pods_RandomArt.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,9 +152,9 @@
 				EB7F3F3424E73D0A003DCD3D /* storyBoards */,
 				EB7F3F0424E721E1003DCD3D /* AppDelegate.swift */,
 				EB7F3F0624E721E1003DCD3D /* SceneDelegate.swift */,
-				EB7F3F0D24E721E2003DCD3D /* Assets.xcassets */,
 				EB7F3F0F24E721E2003DCD3D /* LaunchScreen.storyboard */,
 				EB7F3F1224E721E2003DCD3D /* Info.plist */,
+				EBFFD2EC2519806E00B1641D /* Assets.xcassets */,
 			);
 			path = RandomArt;
 			sourceTree = "<group>";
@@ -169,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				EB7F3F0A24E721E1003DCD3D /* Main.storyboard */,
+				EBAE130824F6D97800CCC3D8 /* yourWork.storyboard */,
 			);
 			path = storyBoards;
 			sourceTree = "<group>";
@@ -176,11 +189,15 @@
 		EB7F3F3624E73D38003DCD3D /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EBDDC3DB2501B4870074A5E0 /* Catalog.swift */,
+				EBDDC3DA2501B4870074A5E0 /* CustomLayout.swift */,
+				EBDDC3DC2501B4870074A5E0 /* ProductCell.swift */,
 				EB7F3F0824E721E1003DCD3D /* ViewController.swift */,
 				EB7F3F3724E73DA3003DCD3D /* MainController.swift */,
 				EB7F3F3B24E78D72003DCD3D /* LandingPageVC.swift */,
 				EB7F3F3D24E78DAE003DCD3D /* sideMenuVC.swift */,
 				EB7F3F4A24EBBA02003DCD3D /* canvasView.swift */,
+				EBAD704E24F74A520069ADC1 /* YourWorkVC.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -189,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				EB7F3F4624E89841003DCD3D /* MathBinaryTree.swift */,
+				EBAD705024F859870069ADC1 /* Card.swift */,
 				EB7F3F4824E8987A003DCD3D /* Node.swift */,
 			);
 			path = dataStructures;
@@ -205,6 +223,7 @@
 				EB7F3EFD24E721E1003DCD3D /* Sources */,
 				EB7F3EFE24E721E1003DCD3D /* Frameworks */,
 				EB7F3EFF24E721E1003DCD3D /* Resources */,
+				5EFF6AA6E5DB34F72984D3FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,7 +277,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = ronald;
 				TargetAttributes = {
 					EB7F3F0024E721E1003DCD3D = {
@@ -299,8 +318,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAE130924F6D97800CCC3D8 /* yourWork.storyboard in Resources */,
 				EB7F3F1124E721E2003DCD3D /* LaunchScreen.storyboard in Resources */,
-				EB7F3F0E24E721E2003DCD3D /* Assets.xcassets in Resources */,
+				EBFFD2ED2519806E00B1641D /* Assets.xcassets in Resources */,
 				EB7F3F0C24E721E1003DCD3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +342,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5EFF6AA6E5DB34F72984D3FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomArt/Pods-RandomArt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomArt/Pods-RandomArt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomArt/Pods-RandomArt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FA6EE1526049A7FAC60E9983 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,11 +392,16 @@
 				EB7F3F3824E73DA3003DCD3D /* MainController.swift in Sources */,
 				EB7F3F4924E8987A003DCD3D /* Node.swift in Sources */,
 				EB7F3F4B24EBBA02003DCD3D /* canvasView.swift in Sources */,
+				EBAD704F24F74A520069ADC1 /* YourWorkVC.swift in Sources */,
+				EBDDC3DF2501B4870074A5E0 /* ProductCell.swift in Sources */,
+				EBDDC3DE2501B4870074A5E0 /* Catalog.swift in Sources */,
 				EB7F3F0924E721E1003DCD3D /* ViewController.swift in Sources */,
+				EBDDC3DD2501B4870074A5E0 /* CustomLayout.swift in Sources */,
 				EB7F3F0524E721E1003DCD3D /* AppDelegate.swift in Sources */,
 				EB7F3F0724E721E1003DCD3D /* SceneDelegate.swift in Sources */,
 				EB7F3F4724E89841003DCD3D /* MathBinaryTree.swift in Sources */,
 				EB7F3F3C24E78D72003DCD3D /* LandingPageVC.swift in Sources */,
+				EBAD705124F859870069ADC1 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +482,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -500,6 +543,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -536,11 +580,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6522LJSM9;
 				INFOPLIST_FILE = RandomArt/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11;
 				PRODUCT_BUNDLE_IDENTIFIER = ronalds.RandomArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -556,11 +601,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6522LJSM9;
 				INFOPLIST_FILE = RandomArt/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11;
 				PRODUCT_BUNDLE_IDENTIFIER = ronalds.RandomArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

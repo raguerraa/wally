@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:RandomArt.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:RandomArt"
+      name = "RandomArt">
+      <Group
+         location = "group:RandomArt/viewControllers"
+         name = "viewControllers">
+         <FileRef
+            location = "group:RandomArt/viewControllers/ViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:RandomArt/viewControllers/MainController.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:RandomArt/storyBoards"
+         name = "storyBoards">
+         <Group
+            location = "group:RandomArt/storyBoards"
+            name = "Main.storyboard">
+            <FileRef
+               location = "group:RandomArt/storyBoards/Base.lproj/Main.storyboard">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:RandomArt/AppDelegate.swift">
+      </FileRef>
+      <FileRef
+         location = "group:RandomArt/SceneDelegate.swift">
+      </FileRef>
+      <FileRef
+         location = "group:RandomArt/Assets.xcassets">
+      </FileRef>
+      <Group
+         location = "group:RandomArt"
+         name = "LaunchScreen.storyboard">
+         <FileRef
+            location = "group:RandomArt/Base.lproj/LaunchScreen.storyboard">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:RandomArt/Info.plist">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

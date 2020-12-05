@@ -4,10 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>RandomArt.xcscheme_^#shared#^_</key>
+		<key>RandomArt 1.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>11</integer>
+		</dict>
+		<key>RandomArt.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EB7F3F0024E721E1003DCD3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB7F3F1624E721E2003DCD3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB7F3F2124E721E2003DCD3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
