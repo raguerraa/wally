@@ -27,6 +27,7 @@
 		EBDDC3DD2501B4870074A5E0 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDDC3DA2501B4870074A5E0 /* CustomLayout.swift */; };
 		EBDDC3DE2501B4870074A5E0 /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDDC3DB2501B4870074A5E0 /* Catalog.swift */; };
 		EBDDC3DF2501B4870074A5E0 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDDC3DC2501B4870074A5E0 /* ProductCell.swift */; };
+		EBF74BE0257F19CC00DE71FA /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF74BDF257F19CC00DE71FA /* ThemeManager.swift */; };
 		EBFFD2ED2519806E00B1641D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFFD2EC2519806E00B1641D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		EBDDC3DA2501B4870074A5E0 /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		EBDDC3DB2501B4870074A5E0 /* Catalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
 		EBDDC3DC2501B4870074A5E0 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		EBF74BDF257F19CC00DE71FA /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		EBFFD2EC2519806E00B1641D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +210,7 @@
 				EB7F3F4624E89841003DCD3D /* MathBinaryTree.swift */,
 				EBAD705024F859870069ADC1 /* Card.swift */,
 				EB7F3F4824E8987A003DCD3D /* Node.swift */,
+				EBF74BDF257F19CC00DE71FA /* ThemeManager.swift */,
 			);
 			path = dataStructures;
 			sourceTree = "<group>";
@@ -277,7 +280,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = ronald;
 				TargetAttributes = {
 					EB7F3F0024E721E1003DCD3D = {
@@ -390,6 +393,7 @@
 			files = (
 				EB7F3F3E24E78DAE003DCD3D /* sideMenuVC.swift in Sources */,
 				EB7F3F3824E73DA3003DCD3D /* MainController.swift in Sources */,
+				EBF74BE0257F19CC00DE71FA /* ThemeManager.swift in Sources */,
 				EB7F3F4924E8987A003DCD3D /* Node.swift in Sources */,
 				EB7F3F4B24EBBA02003DCD3D /* canvasView.swift in Sources */,
 				EBAD704F24F74A520069ADC1 /* YourWorkVC.swift in Sources */,
@@ -580,7 +584,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6522LJSM9;
 				INFOPLIST_FILE = RandomArt/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -601,7 +605,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6522LJSM9;
 				INFOPLIST_FILE = RandomArt/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

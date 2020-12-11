@@ -136,6 +136,9 @@ PODS:
     - MDFTextAccessibility
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
   - SideMenuSwift (2.0.6)
 
 DEPENDENCIES:
@@ -148,6 +151,7 @@ DEPENDENCIES:
   - MaterialComponents/schemes
   - MaterialComponents/schemes/Color
   - MaterialComponents/schemes/Container
+  - NVActivityIndicatorView
   - SideMenuSwift
 
 SPEC REPOS:
@@ -156,6 +160,7 @@ SPEC REPOS:
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
+    - NVActivityIndicatorView
     - SideMenuSwift
 
 SPEC CHECKSUMS:
@@ -163,8 +168,9 @@ SPEC CHECKSUMS:
   MaterialComponents: a6cf920307c2864f71e37972620f24c4d14fae8d
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   SideMenuSwift: f12ca1b11faad909bfc2878df37e0a1c40fa4570
 
-PODFILE CHECKSUM: f08c7a5da0b0ff976bd3a63e9835c00a3a2f8e90
+PODFILE CHECKSUM: 879281dc1bf61f1b859545c3f5f3f95ee2bc4832
 
 COCOAPODS: 1.9.3

@@ -6,6 +6,7 @@ target 'RandomArt' do
   use_frameworks!
   pod 'SideMenuSwift'
   pod 'CardSlider'
+  pod 'NVActivityIndicatorView'
   pod 'MaterialComponents/Cards'
   pod 'MaterialComponents/Buttons'
   pod 'MaterialComponents/schemes/Color'
