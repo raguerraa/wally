@@ -51,7 +51,7 @@
                                             <constraint firstAttribute="width" constant="80" id="cZu-Qk-s2K"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballScaleRippleMultiple"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballScaleMultiple"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="color">
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
@@ -61,6 +61,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="aEL-2d-9hg" firstAttribute="centerX" secondItem="7vc-qD-3bc" secondAttribute="centerX" id="RLy-mE-nZ9"/>
@@ -80,8 +81,8 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="canvas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGe-ZI-4T9">
-                                        <rect key="frame" x="138" y="41.5" width="138" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="138" y="39.5" width="138" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -99,7 +100,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="1" maxValue="11" minimumValueImage="flame" catalog="system" maximumValueImage="flame.fill" translatesAutoresizingMaskIntoConstraints="NO" id="eAd-Ut-iNc">
                                 <rect key="frame" x="55" y="820" width="304" height="31"/>
@@ -134,7 +135,7 @@
                     </view>
                     <connections>
                         <outlet property="canvas" destination="7vc-qD-3bc" id="2ld-NA-gJJ"/>
-                        <outlet property="progressView" destination="aEL-2d-9hg" id="J7Z-WD-b9i"/>
+                        <outlet property="pressMeView" destination="aEL-2d-9hg" id="tki-1t-JIV"/>
                         <outlet property="saveButoon" destination="Ldq-Vc-vNO" id="hEK-BX-za8"/>
                         <outlet property="slider" destination="eAd-Ut-iNc" id="Xl9-n5-Gl6"/>
                     </connections>
@@ -166,7 +167,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="81" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Canvas">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="showCanvas:" destination="dqF-DV-QVs" eventType="touchUpInside" id="Qa0-Qp-eAy"/>
@@ -176,7 +177,7 @@
                                         <rect key="frame" x="0.0" y="79" width="89" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Settings">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="showSettings:" destination="dqF-DV-QVs" eventType="touchUpInside" id="5Cd-qK-Epx"/>
@@ -186,7 +187,7 @@
                                         <rect key="frame" x="0.0" y="158" width="111" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Your Work">
-                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="showYourWork:" destination="dqF-DV-QVs" eventType="touchUpInside" id="NPB-Zg-VjR"/>
@@ -200,7 +201,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WkI-px-Pcq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LVv-0m-51V" firstAttribute="top" secondItem="WkI-px-Pcq" secondAttribute="top" constant="337" id="JzF-0u-LmA"/>
                             <constraint firstItem="WkI-px-Pcq" firstAttribute="trailing" secondItem="LVv-0m-51V" secondAttribute="trailing" constant="10" id="Yr4-67-smY"/>
@@ -220,6 +221,9 @@
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

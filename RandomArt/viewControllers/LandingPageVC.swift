@@ -24,19 +24,27 @@ class LandingPageVC: UIViewController {
     @IBOutlet weak var canvas: canvasView!
     @IBOutlet weak var saveButoon: UIButton!
     
-    @IBOutlet weak var progressView: NVActivityIndicatorView!
+    @IBOutlet weak var pressMeView: NVActivityIndicatorView!
+    
     let theme = ThemeManager.currentTheme()
     var appBarViewController = UINavigationController()
     let goButton = UIButton()
 
     override func viewDidLoad() {
+
         super.viewDidLoad()
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        gradientLayer.colors = [UIColor.init(red: 100/255, green: 240/225, blue: 1, alpha: 1).cgColor, UIColor.init(red: 0, green: 0, blue: 1, alpha: 1).cgColor]
+        view.layer.insertSublayer(gradientLayer, at: 0)
        // self.title = "Canvas"
-        self.view.backgroundColor = theme.backgroundColor
-        self.view.tintColor = .black
+        //self.view.backgroundColor = UIColor.init(red: 221/255, green: 42/225, blue: 123/225, alpha: 1)
+        //self.view.tintColor = .black
         
         configureCanvas()
         configureGoButton()
+        pressMeView.startAnimating()
         //configureTopBar()
     }
     /* TODO: NOT nencessary delete
@@ -69,8 +77,8 @@ class LandingPageVC: UIViewController {
     
     private func configureCanvas(){
         canvas.layer.borderWidth = 3
-        canvas.layer.borderColor = UIColor.init(red: 35/255, green: 74/255, blue: 247/255,
-                                                alpha:0.2).cgColor
+        canvas.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor/*UIColor.init(red: 35/255, green: 74/255, blue: 247/255,
+                                                alpha:0.2).cgColor*/
         canvas.layer.cornerRadius = 5
         canvas.clipsToBounds = true
     }
@@ -99,9 +107,9 @@ class LandingPageVC: UIViewController {
         goButton.clipsToBounds = true
         //goButton.setImage(UIImage(named:"thumbsUp.png"), for: .normal)
         goButton.backgroundColor = UIColor(white: 1, alpha: 0)
-        goButton.layer.borderWidth = 3
-        goButton.layer.borderColor = UIColor.init(red: 35/255, green: 74/255, blue: 247/255,
-                                                  alpha:01).cgColor
+        goButton.layer.borderWidth = 4
+        goButton.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor /*UIColor.init(red: 35/255, green: 74/255, blue: 247/255,
+                                                  alpha:01).cgColor*/
     
         /*
         let gradient = CAGradientLayer()
@@ -133,11 +141,13 @@ class LandingPageVC: UIViewController {
     
     // This method generate Art.
     @objc func goButtonPressed(){
-        progressView.startAnimating()
-
+       
+        pressMeView.stopAnimating()
         goButton.isUserInteractionEnabled = false
+        //pressMeView.stopAnimating()
         canvas.generateArt()
         goButton.isUserInteractionEnabled = true
+        //pressMeView.startAnimating()
     }
  
     // This method generate Art.
