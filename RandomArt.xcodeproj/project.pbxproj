@@ -10,7 +10,6 @@
 		D1A042CD3A8DD316C6AB7390 /* Pods_RandomArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66736AD5C9E92A099F8E51A /* Pods_RandomArt.framework */; };
 		EB7F3F0524E721E1003DCD3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F0424E721E1003DCD3D /* AppDelegate.swift */; };
 		EB7F3F0724E721E1003DCD3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F0624E721E1003DCD3D /* SceneDelegate.swift */; };
-		EB7F3F0924E721E1003DCD3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F0824E721E1003DCD3D /* ViewController.swift */; };
 		EB7F3F0C24E721E1003DCD3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7F3F0A24E721E1003DCD3D /* Main.storyboard */; };
 		EB7F3F1124E721E2003DCD3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7F3F0F24E721E2003DCD3D /* LaunchScreen.storyboard */; };
 		EB7F3F1C24E721E2003DCD3D /* RandomArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F1B24E721E2003DCD3D /* RandomArtTests.swift */; };
@@ -24,9 +23,6 @@
 		EBAD704F24F74A520069ADC1 /* YourWorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD704E24F74A520069ADC1 /* YourWorkVC.swift */; };
 		EBAD705124F859870069ADC1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD705024F859870069ADC1 /* Card.swift */; };
 		EBAE130924F6D97800CCC3D8 /* yourWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAE130824F6D97800CCC3D8 /* yourWork.storyboard */; };
-		EBDDC3DD2501B4870074A5E0 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDDC3DA2501B4870074A5E0 /* CustomLayout.swift */; };
-		EBDDC3DE2501B4870074A5E0 /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDDC3DB2501B4870074A5E0 /* Catalog.swift */; };
-		EBDDC3DF2501B4870074A5E0 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDDC3DC2501B4870074A5E0 /* ProductCell.swift */; };
 		EBF74BE0257F19CC00DE71FA /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF74BDF257F19CC00DE71FA /* ThemeManager.swift */; };
 		EBFFD2ED2519806E00B1641D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFFD2EC2519806E00B1641D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -55,7 +51,6 @@
 		EB7F3F0124E721E1003DCD3D /* RandomArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7F3F0424E721E1003DCD3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB7F3F0624E721E1003DCD3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EB7F3F0824E721E1003DCD3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB7F3F0B24E721E1003DCD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB7F3F1024E721E2003DCD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB7F3F1224E721E2003DCD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,9 +69,6 @@
 		EBAD704E24F74A520069ADC1 /* YourWorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourWorkVC.swift; sourceTree = "<group>"; };
 		EBAD705024F859870069ADC1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		EBAE130824F6D97800CCC3D8 /* yourWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = yourWork.storyboard; sourceTree = "<group>"; };
-		EBDDC3DA2501B4870074A5E0 /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
-		EBDDC3DB2501B4870074A5E0 /* Catalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
-		EBDDC3DC2501B4870074A5E0 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		EBF74BDF257F19CC00DE71FA /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		EBFFD2EC2519806E00B1641D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,10 +183,6 @@
 		EB7F3F3624E73D38003DCD3D /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EBDDC3DB2501B4870074A5E0 /* Catalog.swift */,
-				EBDDC3DA2501B4870074A5E0 /* CustomLayout.swift */,
-				EBDDC3DC2501B4870074A5E0 /* ProductCell.swift */,
-				EB7F3F0824E721E1003DCD3D /* ViewController.swift */,
 				EB7F3F3724E73DA3003DCD3D /* MainController.swift */,
 				EB7F3F3B24E78D72003DCD3D /* LandingPageVC.swift */,
 				EB7F3F3D24E78DAE003DCD3D /* sideMenuVC.swift */,
@@ -397,10 +385,6 @@
 				EB7F3F4924E8987A003DCD3D /* Node.swift in Sources */,
 				EB7F3F4B24EBBA02003DCD3D /* canvasView.swift in Sources */,
 				EBAD704F24F74A520069ADC1 /* YourWorkVC.swift in Sources */,
-				EBDDC3DF2501B4870074A5E0 /* ProductCell.swift in Sources */,
-				EBDDC3DE2501B4870074A5E0 /* Catalog.swift in Sources */,
-				EB7F3F0924E721E1003DCD3D /* ViewController.swift in Sources */,
-				EBDDC3DD2501B4870074A5E0 /* CustomLayout.swift in Sources */,
 				EB7F3F0524E721E1003DCD3D /* AppDelegate.swift in Sources */,
 				EB7F3F0724E721E1003DCD3D /* SceneDelegate.swift in Sources */,
 				EB7F3F4724E89841003DCD3D /* MathBinaryTree.swift in Sources */,
@@ -593,7 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ronalds.RandomArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -614,7 +598,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ronalds.RandomArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

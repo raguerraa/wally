@@ -176,7 +176,7 @@ class MathBinaryTree {
                 return evaluateTreeHelper(node: node.rightChild , x: x, y: y)
                     * evaluateTreeHelper(node: node.leftChild, x: x, y: y)
             case "/":
-                // TODO division by zero may happen
+                // TODO division by zero may happen. Fix it.
                 return evaluateTreeHelper(node: node.rightChild , x: x, y: y)
                     / evaluateTreeHelper(node: node.leftChild, x: x, y: y)
             case "sin":

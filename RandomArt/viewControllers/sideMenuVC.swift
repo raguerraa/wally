@@ -14,9 +14,13 @@ class sideMenuVC: UIViewController {
     let canvasStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let yourWorkStoryboard = UIStoryboard(name: "yourWork", bundle: nil)
 
+    @IBOutlet weak var profileView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        configureProfileView()
         sideMenuController?.cache(viewControllerGenerator: {
             self.canvasStoryboard.instantiateViewController(withIdentifier: "canvas")
         }, with: "canvas")
@@ -26,6 +30,13 @@ class sideMenuVC: UIViewController {
         }, with: "yourWork")
     }
     
+    func configureProfileView(){
+        profileView.layer.borderWidth = 2
+        profileView.layer.masksToBounds = false
+        profileView.layer.borderColor = UIColor.white.cgColor
+        profileView.layer.cornerRadius = profileView.frame.height/2
+        profileView.clipsToBounds = true
+    }
     
     @IBAction func showCanvas(_ sender: Any) {
         

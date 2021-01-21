@@ -9,7 +9,6 @@
 import UIKit
 import CoreGraphics
 import SideMenuSwift
-import MaterialComponents
 import NVActivityIndicatorView
 
 
@@ -20,55 +19,27 @@ enum StorageType {
 
 class LandingPageVC: UIViewController {
 
+    
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var canvas: canvasView!
-    @IBOutlet weak var saveButoon: UIButton!
+    
     
     @IBOutlet weak var pressMeView: NVActivityIndicatorView!
-    
+    @IBOutlet weak var progressView: NVActivityIndicatorView!
     let theme = ThemeManager.currentTheme()
     var appBarViewController = UINavigationController()
     let goButton = UIButton()
-
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = view.bounds
-        gradientLayer.colors = [UIColor.init(red: 100/255, green: 240/225, blue: 1, alpha: 1).cgColor, UIColor.init(red: 0, green: 0, blue: 1, alpha: 1).cgColor]
-        view.layer.insertSublayer(gradientLayer, at: 0)
-       // self.title = "Canvas"
-        //self.view.backgroundColor = UIColor.init(red: 221/255, green: 42/225, blue: 123/225, alpha: 1)
-        //self.view.tintColor = .black
-        
+
+        view.backgroundColor = .black
         configureCanvas()
         configureGoButton()
         pressMeView.startAnimating()
-        //configureTopBar()
     }
-    /* TODO: NOT nencessary delete
-    private func configureTopBar(){
-            
-   
-        self.appBarViewController.didMove(toParent: self)
-        
-        //self.appBarViewController.headerView.minimumHeight = 100
-    
-        
-        // Setup Navigation Items
-        let menuItemImage = UIImage(named: "MenuItem")
-        let templatedMenuItemImage = menuItemImage?.withRenderingMode(.alwaysTemplate)
-        let menuItem = UIBarButtonItem(image: templatedMenuItemImage,
-                                      style: .plain,
-                                      target: self,
-                                      action: #selector(menuItemTapped(sender:)))
-        self.navigationItem.leftBarButtonItem = menuItem
-     
-        
-        self.addChild(self.appBarViewController)
-        self.view.addSubview(self.appBarViewController.view)
-    }*/
+
      // This method opens the side menu.
     @objc func menuItemTapped(sender: Any) {
         self.sideMenuController?.revealMenu();
@@ -77,8 +48,7 @@ class LandingPageVC: UIViewController {
     
     private func configureCanvas(){
         canvas.layer.borderWidth = 3
-        canvas.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor/*UIColor.init(red: 35/255, green: 74/255, blue: 247/255,
-                                                alpha:0.2).cgColor*/
+        canvas.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor
         canvas.layer.cornerRadius = 5
         canvas.clipsToBounds = true
     }
@@ -89,9 +59,6 @@ class LandingPageVC: UIViewController {
     
     private func configureGoButton(){
         
-        //let wrapperView = UIView()
-        // TODO: add a wrapper to the buttom
-        // make sure works for all devices
         goButton.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
         
         view.addSubview(goButton)
@@ -105,54 +72,43 @@ class LandingPageVC: UIViewController {
         NSLayoutConstraint.activate(constraints)
         goButton.layer.cornerRadius = 0.5 * goButton.bounds.size.width
         goButton.clipsToBounds = true
-        //goButton.setImage(UIImage(named:"thumbsUp.png"), for: .normal)
+        
         goButton.backgroundColor = UIColor(white: 1, alpha: 0)
-        goButton.layer.borderWidth = 4
+        goButton.layer.borderWidth = 2
         goButton.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor /*UIColor.init(red: 35/255, green: 74/255, blue: 247/255,
                                                   alpha:01).cgColor*/
-    
-        /*
-        let gradient = CAGradientLayer()
-        gradient.frame =  CGRect(origin: CGPoint(x: 200,y: 200), size: goButton.frame.size)
-        gradient.colors = [UIColor.red, UIColor.green]
-    
-        let shape = CAShapeLayer()
-        shape.lineWidth = 10
-        shape.path = UIBezierPath(rect: goButton.bounds).cgPath
-        shape.strokeColor = UIColor.black.cgColor
-        shape.fillColor = UIColor.green.cgColor
-        gradient.mask = shape
-        goButton.layer.addSublayer(gradient)
-        */
         if #available(iOS 13.0, *) {
             let boldConfig = UIImage.SymbolConfiguration(weight: .bold)
             
             goButton.setImage(UIImage(systemName: "camera.fill", withConfiguration: boldConfig),
                               for: .normal)
-            goButton.tintColor = UIColor.brown
+            goButton.tintColor = UIColor.black//UIColor.init(red: 54/225, green: 34/225, blue: 4/225, alpha: 1)
+            
+            goButton.contentVerticalAlignment = .fill
+            goButton.contentHorizontalAlignment = .fill
+            goButton.imageEdgeInsets = UIEdgeInsets(top: 22, left: 15, bottom: 22, right: 15)
         } else {
             goButton.setTitle("Go", for: .normal)
         }
-        goButton.setTitleColor(UIColor.blue, for: .normal)
         
+        goButton.setTitleColor(UIColor.blue, for: .normal)
         goButton.addTarget(self, action: #selector(goButtonPressed), for: .touchUpInside)
-        //view.addSubview(goButton)
     }
     
     // This method generate Art.
     @objc func goButtonPressed(){
        
         pressMeView.stopAnimating()
-        goButton.isUserInteractionEnabled = false
-        //pressMeView.stopAnimating()
-        canvas.generateArt()
-        goButton.isUserInteractionEnabled = true
-        //pressMeView.startAnimating()
-    }
- 
-    // This method generate Art.
-    @IBAction func generateArt(_ sender: Any) {
-        canvas.generateArt()
+        progressView.startAnimating()
+        goButton.isSelected = false
+        goButton.isHidden = true
+        DispatchQueue.main.async {
+            self.pressMeView.startAnimating()
+            self.progressView.stopAnimating()
+            self.canvas.generateArt()
+            self.goButton.isSelected = true
+            self.goButton.isHidden = false
+        }
     }
     
     @IBAction func changeComplexity(_ sender: Any) {
@@ -161,7 +117,8 @@ class LandingPageVC: UIViewController {
     }
     
     @IBAction func saveArt(_ sender: Any) {
-        saveButoon.isHidden = true
+    
+        pressMeView.isHidden = true
         canvas.layer.borderWidth = 0
         canvas.layer.cornerRadius = 0
         let renderer = UIGraphicsImageRenderer(size: canvas.frame.size)
@@ -175,32 +132,7 @@ class LandingPageVC: UIViewController {
                               withStorageType: .fileSystem)
                   print("Saved!")
         }
-        
-        saveButoon.isHidden = false
-        canvas.layer.borderWidth = 3
-        canvas.layer.cornerRadius = 5
-        UIImageWriteToSavedPhotosAlbum(artWork, self,
-            #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-        
-    }
-    @IBAction func saveArtWork(_ sender: Any) {
-        
-        saveButoon.isHidden = true
-        canvas.layer.borderWidth = 0
-        canvas.layer.cornerRadius = 0
-        let renderer = UIGraphicsImageRenderer(size: canvas.frame.size)
-        let artWork = renderer.image { ctx in
-            canvas.drawHierarchy(in: canvas.bounds, afterScreenUpdates: true)
-        }
-        
-        DispatchQueue.global(qos: .background).async {
-                  self.store(image: artWork,
-                              forKey: "buildingImage",
-                              withStorageType: .fileSystem)
-                  print("Saved!")
-        }
-        
-        saveButoon.isHidden = false
+        pressMeView.isHidden = false
         canvas.layer.borderWidth = 3
         canvas.layer.cornerRadius = 5
         UIImageWriteToSavedPhotosAlbum(artWork, self,

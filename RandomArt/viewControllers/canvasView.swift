@@ -42,11 +42,11 @@ class canvasView: UIView {
         mathTreeBlue.GenerateRandomTree(with: DEPTH)
         
         let horizontalOffset: Float = 1.0/Float(widthPoints)
-        print("Width: ", widthPoints )
-        print("Height: ", heightPoints)
+        //print("Width: ", widthPoints )
+        //print("Height: ", heightPoints)
         let verticalOffset: Float = 1.0/Float(heightPoints)
-        print("shiftx: ", horizontalOffset )
-        print("shifty: ", verticalOffset)
+        //print("shiftx: ", horizontalOffset )
+        //print("shifty: ", verticalOffset)
         
         var rowShift: Float = 0
         
