@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Free CollectionVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="freeCollection" id="Y6W-OH-hqX" customClass="FreeCollectionVC" customModule="RandomArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sideMenuImage" translatesAutoresizingMaskIntoConstraints="NO" id="FLv-LN-neL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="B4q-BP-pkx">
+                                <rect key="frame" x="30" y="150" width="354" height="746"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4ZY-Om-E0E">
+                                    <size key="itemSize" width="246" height="225"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="EAF-cj-8iK">
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="746"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="8zw-A3-k9C" customClass="WallpaperCollectionViewCell" customModule="RandomArt" customModuleProvider="target">
+                                        <rect key="frame" x="54" y="0.0" width="246" height="225"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GUS-P4-5YR">
+                                            <rect key="frame" x="0.0" y="0.0" width="246" height="225"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lqo-Gf-0lz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="246" height="225"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="95%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2X-xx-i6i">
+                                                    <rect key="frame" x="8" y="8" width="67" height="31"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="83P-EC-OaN"/>
+                                                        <constraint firstAttribute="width" constant="67" id="Dbp-ee-NYX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZf-ca-xgA">
+                                                    <rect key="frame" x="88" y="8" width="150" height="31"/>
+                                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="8fa-gE-Lby"/>
+                                                        <constraint firstAttribute="width" constant="150" id="DDx-vP-phS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Download">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="showWallpaper:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uAt-vQ-Hhz"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpi-ve-s8w">
+                                                    <rect key="frame" x="8" y="182" width="230" height="35"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="tpi-ve-s8w" secondAttribute="height" multiplier="46:7" id="n79-Uz-ICC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="tpi-ve-s8w" secondAttribute="bottom" constant="8" id="BJA-iR-Ff9"/>
+                                                <constraint firstItem="QZf-ca-xgA" firstAttribute="top" secondItem="GUS-P4-5YR" secondAttribute="top" constant="8" id="Enb-MP-wDm"/>
+                                                <constraint firstItem="lqo-Gf-0lz" firstAttribute="leading" secondItem="GUS-P4-5YR" secondAttribute="leading" id="ILJ-Km-y7K"/>
+                                                <constraint firstAttribute="trailing" secondItem="tpi-ve-s8w" secondAttribute="trailing" constant="8" id="MdP-lc-3wM"/>
+                                                <constraint firstAttribute="trailing" secondItem="QZf-ca-xgA" secondAttribute="trailing" constant="8" id="OfH-IT-uJ6"/>
+                                                <constraint firstAttribute="bottom" secondItem="lqo-Gf-0lz" secondAttribute="bottom" id="P6S-Hz-aYd"/>
+                                                <constraint firstItem="v2X-xx-i6i" firstAttribute="top" secondItem="GUS-P4-5YR" secondAttribute="top" constant="8" id="YGh-F7-6e5"/>
+                                                <constraint firstAttribute="trailing" secondItem="lqo-Gf-0lz" secondAttribute="trailing" id="Yb7-fr-tDJ"/>
+                                                <constraint firstItem="tpi-ve-s8w" firstAttribute="leading" secondItem="GUS-P4-5YR" secondAttribute="leading" constant="8" id="fJJ-Bo-62Q"/>
+                                                <constraint firstItem="v2X-xx-i6i" firstAttribute="leading" secondItem="GUS-P4-5YR" secondAttribute="leading" constant="8" id="s7L-qI-gxg"/>
+                                                <constraint firstItem="lqo-Gf-0lz" firstAttribute="top" secondItem="GUS-P4-5YR" secondAttribute="top" id="sih-TK-KeN"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="246" height="225"/>
+                                        <connections>
+                                            <outlet property="complexity" destination="v2X-xx-i6i" id="GNi-WM-det"/>
+                                            <outlet property="download" destination="QZf-ca-xgA" id="JVi-pl-A8n"/>
+                                            <outlet property="image" destination="lqo-Gf-0lz" id="kXb-l1-Fzr"/>
+                                            <outlet property="name" destination="tpi-ve-s8w" id="vw6-QH-jiy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0y-Go-DUd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="io0-wI-aPC"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Free Collection" id="JDz-gc-df0"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="XRG-ya-2eL">
+                                <rect key="frame" x="30" y="98" width="354" height="37"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZD-Mv-4J1">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="37"/>
+                                        <color key="backgroundColor" red="0.18823529411764706" green="0.83137254901960778" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Vivid">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showVividWallpapers:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XGf-Nc-FVG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I4-le-bge">
+                                        <rect key="frame" x="72" y="0.0" width="66" height="37"/>
+                                        <color key="backgroundColor" red="0.18823529411764706" green="0.83137254901960778" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Dark">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showDarkWallpapers:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Mh5-1E-KSl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlA-G7-WeK">
+                                        <rect key="frame" x="144" y="0.0" width="66" height="37"/>
+                                        <color key="backgroundColor" red="0.38823529411764707" green="0.011764705882352941" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="50%">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="show50PercentComplexity:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kp7-y8-hkf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za4-Dc-2KQ">
+                                        <rect key="frame" x="216" y="0.0" width="66" height="37"/>
+                                        <color key="backgroundColor" red="0.38823529411764707" green="0.011764705882352941" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="75%">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="show75PercentComplexity:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xx4-G6-GEX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1c-G3-5g9">
+                                        <rect key="frame" x="288" y="0.0" width="66" height="37"/>
+                                        <color key="backgroundColor" red="0.38823529411764707" green="0.011764705882352941" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="100%">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="show100PercentComplexity:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FdO-5C-pMf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y0y-Go-DUd" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="1Vt-Q1-1e8"/>
+                            <constraint firstItem="XRG-ya-2eL" firstAttribute="top" secondItem="y0y-Go-DUd" secondAttribute="bottom" constant="10" id="4Uv-N4-Urh"/>
+                            <constraint firstAttribute="bottom" secondItem="B4q-BP-pkx" secondAttribute="bottom" id="8hi-AJ-t3C"/>
+                            <constraint firstItem="y0y-Go-DUd" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="9Se-Ua-Uez"/>
+                            <constraint firstAttribute="trailing" secondItem="FLv-LN-neL" secondAttribute="trailing" id="D7v-xt-6Kp"/>
+                            <constraint firstItem="y0y-Go-DUd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Xa9-pL-fL6"/>
+                            <constraint firstAttribute="bottom" secondItem="FLv-LN-neL" secondAttribute="bottom" id="YcA-0y-38t"/>
+                            <constraint firstItem="y0y-Go-DUd" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="asg-bH-ZLh"/>
+                            <constraint firstItem="FLv-LN-neL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="azv-dL-UgS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="B4q-BP-pkx" secondAttribute="trailing" constant="30" id="dG1-gM-k3Y"/>
+                            <constraint firstItem="XRG-ya-2eL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="khG-Lm-TKQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XRG-ya-2eL" secondAttribute="trailing" constant="30" id="l5f-6Q-m6p"/>
+                            <constraint firstItem="B4q-BP-pkx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="nZc-Gi-G6c"/>
+                            <constraint firstItem="FLv-LN-neL" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="oQE-m0-AhO"/>
+                            <constraint firstItem="B4q-BP-pkx" firstAttribute="top" secondItem="XRG-ya-2eL" secondAttribute="bottom" constant="15" id="z1R-gI-VqF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artworkCollection" destination="B4q-BP-pkx" id="rSz-EO-Ih2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="81.696428571428569"/>
+        </scene>
+        <!--DownloadVC-->
+        <scene sceneID="0vu-fl-lh9">
+            <objects>
+                <viewController storyboardIdentifier="downloadVC" id="8c0-pc-Ypw" customClass="DownloadVC" customModule="RandomArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bcL-0u-5WU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sideMenuImage" translatesAutoresizingMaskIntoConstraints="NO" id="fIJ-zo-pZL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt3-pw-tLl">
+                                <rect key="frame" x="224" y="74" width="160" height="44"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="CVK-kZ-bRa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Download">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="downloadWallpaper:" destination="8c0-pc-Ypw" eventType="touchUpInside" id="IaS-3V-mg2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqj-fO-Y6q">
+                                <rect key="frame" x="30" y="74" width="80" height="35.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="eSD-AV-RcC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voidness" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IO-ym-X8w">
+                                <rect key="frame" x="30" y="742" width="354" height="90"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Vvy-Mt-H2b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hbR-kc-O0r"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hbR-kc-O0r" firstAttribute="trailing" secondItem="Rt3-pw-tLl" secondAttribute="trailing" constant="30" id="1R6-LC-1xe"/>
+                            <constraint firstAttribute="bottom" secondItem="fIJ-zo-pZL" secondAttribute="bottom" id="35K-hV-tWi"/>
+                            <constraint firstItem="8IO-ym-X8w" firstAttribute="leading" secondItem="hbR-kc-O0r" secondAttribute="leading" constant="30" id="BAl-nT-HBa"/>
+                            <constraint firstAttribute="trailing" secondItem="fIJ-zo-pZL" secondAttribute="trailing" id="Ntj-6k-kqg"/>
+                            <constraint firstItem="hbR-kc-O0r" firstAttribute="bottom" secondItem="8IO-ym-X8w" secondAttribute="bottom" constant="30" id="eQP-hq-gjF"/>
+                            <constraint firstItem="fqj-fO-Y6q" firstAttribute="top" secondItem="hbR-kc-O0r" secondAttribute="top" constant="30" id="f3Z-gH-pNm"/>
+                            <constraint firstItem="fIJ-zo-pZL" firstAttribute="leading" secondItem="bcL-0u-5WU" secondAttribute="leading" id="idq-Bg-p0N"/>
+                            <constraint firstItem="fqj-fO-Y6q" firstAttribute="leading" secondItem="hbR-kc-O0r" secondAttribute="leading" constant="30" id="nxZ-bl-G2R"/>
+                            <constraint firstItem="Rt3-pw-tLl" firstAttribute="top" secondItem="hbR-kc-O0r" secondAttribute="top" constant="30" id="tPn-JW-vZt"/>
+                            <constraint firstItem="hbR-kc-O0r" firstAttribute="trailing" secondItem="8IO-ym-X8w" secondAttribute="trailing" constant="30" id="vrX-Co-5np"/>
+                            <constraint firstItem="fIJ-zo-pZL" firstAttribute="top" secondItem="hbR-kc-O0r" secondAttribute="top" id="x1Y-Pz-NFr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uQw-4r-HIg"/>
+                    <connections>
+                        <outlet property="complexityLabel" destination="fqj-fO-Y6q" id="Mxi-Sz-vq4"/>
+                        <outlet property="nameLabel" destination="8IO-ym-X8w" id="Nc1-Gl-kHa"/>
+                        <outlet property="wallpaperView" destination="fIJ-zo-pZL" id="uMn-aT-tCX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gY-5x-qUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842.02898550724649" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sideMenuImage" width="428" height="926"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

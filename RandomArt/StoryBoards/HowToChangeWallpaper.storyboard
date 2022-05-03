@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--How To Change WallpaperVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="howToChangeWallpaper" id="Y6W-OH-hqX" customClass="HowToChangeWallpaperVC" customModule="RandomArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sideMenuImage" translatesAutoresizingMaskIntoConstraints="NO" id="7ts-I4-xtz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouy-8v-okW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="FFs-Ov-5H1"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="How To" id="yUw-6y-qXT"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7ts-I4-xtz" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="2wR-Y2-XZR"/>
+                            <constraint firstItem="7ts-I4-xtz" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="3PI-4M-wFP"/>
+                            <constraint firstAttribute="trailing" secondItem="7ts-I4-xtz" secondAttribute="trailing" id="C3i-xi-CWz"/>
+                            <constraint firstItem="ouy-8v-okW" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="CUD-Mq-Nd8"/>
+                            <constraint firstItem="ouy-8v-okW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="I1L-W3-Nmp"/>
+                            <constraint firstAttribute="trailing" secondItem="ouy-8v-okW" secondAttribute="trailing" id="Ve9-Rk-7NK"/>
+                            <constraint firstAttribute="bottom" secondItem="7ts-I4-xtz" secondAttribute="bottom" id="aXL-PK-vxK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="36.830357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sideMenuImage" width="428" height="926"/>
+    </resources>
+</document>

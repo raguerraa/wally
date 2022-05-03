@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  RandomArt
 //
-//  Created by Owner on 8/14/20.
-//  Copyright © 2020 ronald. All rights reserved.
+//  Modified by Ronald on 4/15/22.
+//  Copyright © 2020 Ronald. All rights reserved.
 //
 
 import UIKit
