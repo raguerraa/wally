@@ -30,12 +30,7 @@ class CanvasV: UIView {
     
     // This generates the wallpaper.
     override func draw(_ rect: CGRect) {
-
-        var redFrequency = [Int: Int]()
-        var greenFrequency = [Int: Int]()
-        var blueFrequency = [Int: Int]()
  
-        
         super.draw(rect)
         if(isNotDrawing){
             return
@@ -63,6 +58,11 @@ class CanvasV: UIView {
 
         var rowShift: Float = 0
         
+        // We will take the avarage of each color to name the wallpaper
+        var redAvarage = 0
+        var greenAvarage = 0
+        var blueAvarage = 0
+        
         // For each point in the screen, we will evaluate the generated random math expression
         // based on its y and x position.
         for y2 in 1...heightPoints {
@@ -79,23 +79,10 @@ class CanvasV: UIView {
                 let green255:Int = Int(green*255)
                 let blue255:Int = Int(blue*255)
                 
-                
-                if  redFrequency[red255] != nil {
-                    redFrequency[red255] = redFrequency[red255]! +  1
-                }else{
-                    redFrequency[red255] = 1
-                }
-                if greenFrequency[green255] != nil {
-                    greenFrequency[green255] = greenFrequency[green255]! + 1
-                }else{
-                    greenFrequency[green255] = 1
-                }
-                if blueFrequency[blue255] != nil {
-                    blueFrequency[blue255] = blueFrequency[blue255]! + 1
-                }else{
-                    blueFrequency[blue255] = 1
-                }
-                
+                redAvarage = redAvarage + red255
+                greenAvarage = greenAvarage + green255
+                blueAvarage = blueAvarage + blue255
+
                 let color = UIColor.init(red: CGFloat(red), green: CGFloat(green), blue:
                     CGFloat(blue), alpha: 1).cgColor
                 
@@ -107,33 +94,23 @@ class CanvasV: UIView {
             }
             rowShift = rowShift + verticalOffset
         }
-        // Let's calculate the mode of each color, and find the most common color.
-        let redMode = redFrequency.max{a, b in a.value < b.value}
-        let greenMode = greenFrequency.max{a, b in a.value < b.value}
-        let blueMode = blueFrequency.max{a, b in a.value < b.value}
-
-        if redMode!.key < 0 || redMode!.key > 255 {
-            print(redMode!.key)
-            assertionFailure("redMode has gone out of bounds")
-        }
-        if greenMode!.key < 0 || greenMode!.key > 255 {
-            print(greenMode!.key)
-            assertionFailure("greenMode has gone out of bounds")
-        }
-        if blueMode!.key < 0 || blueMode!.key > 255 {
-            print(blueMode!.key)
-            assertionFailure("redMode has gone out of bounds")
-        }
-        let red = String(format: "%02X", Int(redMode!.key))
-        let green = String(format: "%02X", Int(greenMode!.key))
-        let blue = String(format: "%02X", Int(blueMode!.key))
+        
+        // Let's caculate the avarage of each color and change the base to hexadecimal.
+        let red = String(format: "%02X", redAvarage/(widthPoints*heightPoints))
+        let green = String(format: "%02X", greenAvarage/(widthPoints*heightPoints))
+        let blue = String(format: "%02X", blueAvarage/(widthPoints*heightPoints))
         
         // TODO: delete when releasing app
-        print("Color avarage hex",red + green + blue)
-        //print("Color avarage decimal", Int(red + green + blue, radix: 16))
+        print("Color mode hex", red + green + blue)
+        print("Color avarage decimal", Int(red + green + blue, radix: 16))
         
         // Once the wallpaper is generated, let's update the name of the wallpaper.
-        delegate?.updateName(avarageColor: Int(red + green + blue, radix: 16) ?? 1 )
+        let decimalRGB = Int(red + green + blue, radix: 16)
+        guard let decimalRGB = decimalRGB else{
+            preconditionFailure("Hexadecimal could be converted to Decimal")
+        }
+        delegate?.updateName(avarageColor: decimalRGB)
+        
     }
     // This generates the wallpaper. It does so by overriding the drawing method.
     func generateWallpaper() {

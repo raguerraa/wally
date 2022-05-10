@@ -30,7 +30,7 @@ class FreeCollectionVC: UIViewController {
         
         artworkCollection.delegate = self
         artworkCollection.dataSource = self
-        wallpapers = loadWallpapers()
+        wallpapers = loadWallpapers() ?? []
         
         let gesture = UILongPressGestureRecognizer(target: self, action:#selector(handleLongPress(_:)))
         artworkCollection.addGestureRecognizer(gesture)
@@ -55,14 +55,13 @@ class FreeCollectionVC: UIViewController {
         }
     }
     
-    // This will read all wallpapers from wallpapers.json
-    private func loadWallpapers()->[Wallpaper]{
+    // This will read all wallpapers from wallpapers.json and nil if there is an error.
+    private func loadWallpapers()->[Wallpaper]?{
         
         guard let path = Bundle.main.path(forResource: "wallpapers", ofType:"json" ) else {
-            print("wallpapers.json not found")
-            // TODO: remove assertion when there is a way to handle that file is not found
-            assertionFailure("wallpapers.json not found")
-            return []
+            // TODO: Inform the user that wallpapers.json was not found.
+            assertionFailure("Error: wallpapers.json not found")
+            return nil
         }
         
         var wallpaperFile: WallpaperFile?
@@ -76,13 +75,13 @@ class FreeCollectionVC: UIViewController {
             if let wallpaperFile = wallpaperFile {
                 return wallpaperFile.wallpapers
             }else{
-                print("Failed to parse file wallpapers.json")
+                assertionFailure("Error: Failed to parse file wallpapers.json")
             }
             
         }catch {
-            print("Error: loading file wallpapers.json")
+            assertionFailure("Error: loading file wallpapers.json")
         }
-        return []
+        return nil
     }
     
     // This will show wallpapers that are vivid
@@ -146,7 +145,7 @@ class FreeCollectionVC: UIViewController {
     // are active to the collection.
     private func applyTag(isSelected: Bool, button:UIButton?){
         
-        wallpapers = loadWallpapers()
+        wallpapers = loadWallpapers() ?? []
         if isSelected {
             makeSelected(button: button)
         }else {

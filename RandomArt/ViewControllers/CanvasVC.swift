@@ -51,14 +51,20 @@ class CanvasVC: UIViewController {
         configureCanvas()
         configureGoButton()
         pressMeView.startAnimating()
-        colors = readColorWordsFile()
-        artNames = readArtWordsFile()
+        
+        // If it returns nil, then we display a default color adjective.
+        let colorError = Color(name: "Absolute", decimal: 0)
+        colors = readColorWordsFile() ??  [colorError]
+        
+        // If it returns nil, then we display a default art noun.
+        artNames = readArtWordsFile() ?? ["Wallpaper"]
         canvas.delegate = self
     }
     
     // This method reads the files that contains the names of colors and positive words
-    // so that we can use them to form the names of the wallpapers.
-    private func readColorWordsFile() -> [Color]{
+    // so that we can use them to form the names of the wallpapers.It returns nil if there
+    // was an error while reading the file.
+    private func readColorWordsFile() -> [Color]?{
         
         var colors:[Color] = []
         
@@ -86,16 +92,17 @@ class CanvasVC: UIViewController {
                 }
                 return colors
             } catch {
-                print("File colorsDb.txt contents could not be loaded")
+                assertionFailure("File colorsDb.txt contents could not be loaded")
             }
         } else {
-            print("colorsDb.txt not found!")
+            assertionFailure("colorsDb.txt not found!")
         }
-        return []
+        return nil
     }
     
-    // This method loads the file that containes art words and returns a list of them.
-    private func readArtWordsFile() -> [String]{
+    // This method loads the file that containes art words and returns a list of them. If
+    // there is an error while reading the file returns nil.
+    private func readArtWordsFile() -> [String]?{
         if let filepath = Bundle.main.path(forResource: "artWords", ofType: "txt") {
             do {
                 let contents = try String(contentsOfFile: filepath)
@@ -105,12 +112,12 @@ class CanvasVC: UIViewController {
                 return lines
                 
             }catch{
-                print("File artWords.txt content could not be loaded")
+                assertionFailure("File artWords.txt content could not be loaded")
             }
         }else{
-            print("artWords.txt not found!")
+            assertionFailure("artWords.txt not found!")
         }
-        return []
+        return nil
     }
     
     // This method binary search in the color file, colorsDB.txt, for a similar color to the
@@ -145,10 +152,22 @@ class CanvasVC: UIViewController {
         canvas.layer.cornerRadius = 0
         canvas.clipsToBounds = true
     }
+    
+    // This enables user interactions
+    private func enableUserInteractions(){
+        view.isUserInteractionEnabled = true
+    }
+    
+    // This disables user interactions
+    private func disableUserInteractions(){
+        view.isUserInteractionEnabled = false
+    }
 
     // This shows the side menu.
     @IBAction func menuItemTap(_ sender: Any) {
-        self.sideMenuController?.revealMenu()
+        disableUserInteractions()
+        sideMenuController?.revealMenu()
+        enableUserInteractions()
     }
     
     // This configures the button that generates the wallpaper.
@@ -177,17 +196,14 @@ class CanvasVC: UIViewController {
     
     // This method generate a wallpaper.
     @objc func goButtonPressed(){
-       
+        
+        goButton.isHidden = true
         pressMeView.stopAnimating()
         progressView.startAnimating()
-        goButton.isSelected = false
-        goButton.isHidden = true
-        
         DispatchQueue.main.async {
+            self.canvas.generateWallpaper()
             self.pressMeView.startAnimating()
             self.progressView.stopAnimating()
-            self.canvas.generateWallpaper()
-            self.goButton.isSelected = true
             self.goButton.isHidden = false
         }
     }
@@ -245,6 +261,7 @@ extension CanvasVC: CanvasVDelegate {
         print("color chosen decimal:", color.decimal)
         colorAdjective.text = color.name
         
+        // Set the default if there is an error while findig a random color noun.
         if let randomName = artNames.randomElement() {
             artNoun.text = randomName
         }else {
