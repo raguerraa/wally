@@ -16,12 +16,9 @@ import func Darwin.tan
 import func Darwin.sqrt
 
 class MathBinaryTree {
+    
     private var DEPTH = 0
     private var root: Node<String>?
-    var ar1:[String] = []
-    var ar2:[String] = []
-    var ar3:[String] = []
-    var ar4:[String] = []
     
     // Supported math operations:
     // If a new math operation is added then it must be added a handling case in the
@@ -41,19 +38,6 @@ class MathBinaryTree {
     }
     
     private func generatorHelper(_ depth: Int, _ node: Node<String>){
-        
-        if depth == 1{
-            ar1.append(node.value)
-        }
-        if depth == 2{
-            ar2.append(node.value)
-        }
-        if depth == 3{
-            ar3.append(node.value)
-        }
-        if depth == 4{
-            ar4.append(node.value)
-        }
         
         // Base case
         if depth == 1 {
@@ -125,35 +109,6 @@ class MathBinaryTree {
     // Gets the depth of the tree.
     func getDepth() -> Int {
         return DEPTH
-    }
-    
-    func printTree(){
-        if root == nil{
-            print("No tree generated yet")
-            return
-        }
-        print("Depth ", getDepth())
-        print(ar1)
-        print(ar2)
-        print(ar3)
-        print(ar4)
-    }
-    
-    func traverse(){
-        if root == nil{
-            return
-        }
-        traverseHelper(root!)
-        print(" Done")
-    }
-    private func traverseHelper(_ node: Node<String>?){
-        
-        guard let node =  node else{
-            return
-        }
-        print(node.value, terminator: " ")
-        traverseHelper(node.rightChild)
-        traverseHelper(node.leftChild)
     }
     
     // This method evaluates the randomly generated math expression given x, and y.

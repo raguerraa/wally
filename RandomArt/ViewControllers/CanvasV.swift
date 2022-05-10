@@ -42,15 +42,11 @@ class CanvasV: UIView {
         
         let widthPoints: Int = Int(ceil(self.frame.width))
         let heightPoints: Int = Int(ceil(self.frame.height))
-        // TODO: delete when releasing app
-        print("Width: ", widthPoints )
-        print("Height: ", heightPoints)
-        
+
         // Get a random math expression.
         mathTreeRed.GenerateRandomTree(with: DEPTH)
         mathTreeGreen.GenerateRandomTree(with: DEPTH)
         mathTreeBlue.GenerateRandomTree(with: DEPTH)
-        mathTreeRed.printTree()
         
         // We will normalize the x and y coordinates to be in the range [0, 1]
         let horizontalOffset: Float = 1.0/Float(widthPoints)
@@ -99,10 +95,6 @@ class CanvasV: UIView {
         let red = String(format: "%02X", redAvarage/(widthPoints*heightPoints))
         let green = String(format: "%02X", greenAvarage/(widthPoints*heightPoints))
         let blue = String(format: "%02X", blueAvarage/(widthPoints*heightPoints))
-        
-        // TODO: delete when releasing app
-        print("Color mode hex", red + green + blue)
-        print("Color avarage decimal", Int(red + green + blue, radix: 16))
         
         // Once the wallpaper is generated, let's update the name of the wallpaper.
         let decimalRGB = Int(red + green + blue, radix: 16)
