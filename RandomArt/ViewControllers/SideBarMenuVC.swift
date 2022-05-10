@@ -1,5 +1,5 @@
 //
-//  SideMenuVC.swift
+//  SideBarMenuVC.swift
 //  RandomArt
 //
 //  Modified by Ronald on 4/15/22.

@@ -1,5 +1,5 @@
 //
-//  LandingPageVC.swift
+//  CanvasVC.swift
 //  RandomArt
 //
 //  Modified by Ronald on 4/15/22.
