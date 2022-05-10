@@ -28,7 +28,7 @@ class MathBinaryTree {
     // If a new math operation is added then it must be added a handling case in the
     // evaluateTreeHelper method.
     private let binaryOperations: [String] = ["*", "avg"]
-    private let uniryOperations: [String] = ["cos", "sin"/*, "com", "tan"*/]// "floor", "ceiling"]
+    private let uniryOperations: [String] = ["cos", "sin"]
     
     // Generates new Math Binary Tree of a given depth.
     func GenerateRandomTree(with depth: Int){
