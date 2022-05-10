@@ -11,7 +11,7 @@
 		110163FA27F4BAAC00910BC8 /* FreeCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110163F927F4BAAC00910BC8 /* FreeCollectionVC.swift */; };
 		110163FC27F51F4B00910BC8 /* WallpaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110163FB27F51F4B00910BC8 /* WallpaperCollectionViewCell.swift */; };
 		110163FE27F6AE2E00910BC8 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110163FD27F6AE2E00910BC8 /* Wallpaper.swift */; };
-		112D1E40282B1EFB009DE1A0 /* SideMenuVCtwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F3D24E78DAE003DCD3D /* SideMenuVCtwo.swift */; };
+		112D1E42282B2293009DE1A0 /* SideBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D1E41282B2293009DE1A0 /* SideBarMenu.swift */; };
 		11844E4E2806B35900F354AA /* DownloadExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11844E4D2806B35900F354AA /* DownloadExtension.swift */; };
 		11844E502807A78800F354AA /* HowToChangeWallpaperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11844E4F2807A78800F354AA /* HowToChangeWallpaperVC.swift */; };
 		11844E522807A7DE00F354AA /* HowToChangeWallpaper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11844E512807A7DE00F354AA /* HowToChangeWallpaper.storyboard */; };
@@ -57,6 +57,7 @@
 		110163F927F4BAAC00910BC8 /* FreeCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeCollectionVC.swift; sourceTree = "<group>"; };
 		110163FB27F51F4B00910BC8 /* WallpaperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCollectionViewCell.swift; sourceTree = "<group>"; };
 		110163FD27F6AE2E00910BC8 /* Wallpaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
+		112D1E41282B2293009DE1A0 /* SideBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenu.swift; sourceTree = "<group>"; };
 		11844E4D2806B35900F354AA /* DownloadExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadExtension.swift; sourceTree = "<group>"; };
 		11844E4F2807A78800F354AA /* HowToChangeWallpaperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToChangeWallpaperVC.swift; sourceTree = "<group>"; };
 		11844E512807A7DE00F354AA /* HowToChangeWallpaper.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HowToChangeWallpaper.storyboard; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		EB7F3F2624E721E2003DCD3D /* RandomArtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomArtUITests.swift; sourceTree = "<group>"; };
 		EB7F3F2824E721E2003DCD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB7F3F3B24E78D72003DCD3D /* CanvasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasVC.swift; sourceTree = "<group>"; };
-		EB7F3F3D24E78DAE003DCD3D /* SideMenuVCtwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVCtwo.swift; sourceTree = "<group>"; };
 		EB7F3F4624E89841003DCD3D /* MathBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathBinaryTree.swift; sourceTree = "<group>"; };
 		EB7F3F4824E8987A003DCD3D /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		EB7F3F4A24EBBA02003DCD3D /* CanvasV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasV.swift; sourceTree = "<group>"; };
@@ -222,11 +222,11 @@
 			isa = PBXGroup;
 			children = (
 				EB7F3F3B24E78D72003DCD3D /* CanvasVC.swift */,
-				EB7F3F3D24E78DAE003DCD3D /* SideMenuVCtwo.swift */,
 				EB7F3F4A24EBBA02003DCD3D /* CanvasV.swift */,
 				110163F927F4BAAC00910BC8 /* FreeCollectionVC.swift */,
 				11C0972B28063CAF00D1A88D /* DownloadVC.swift */,
 				11844E4F2807A78800F354AA /* HowToChangeWallpaperVC.swift */,
+				112D1E41282B2293009DE1A0 /* SideBarMenu.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -426,7 +426,6 @@
 			files = (
 				11844E4E2806B35900F354AA /* DownloadExtension.swift in Sources */,
 				EB7F3F4924E8987A003DCD3D /* Node.swift in Sources */,
-				112D1E40282B1EFB009DE1A0 /* SideMenuVCtwo.swift in Sources */,
 				EB7F3F4B24EBBA02003DCD3D /* CanvasV.swift in Sources */,
 				11C0972A2800070300D1A88D /* WallpaperFile.swift in Sources */,
 				110163FE27F6AE2E00910BC8 /* Wallpaper.swift in Sources */,
@@ -437,6 +436,7 @@
 				11C0972C28063CAF00D1A88D /* DownloadVC.swift in Sources */,
 				110163FA27F4BAAC00910BC8 /* FreeCollectionVC.swift in Sources */,
 				EB7F3F4724E89841003DCD3D /* MathBinaryTree.swift in Sources */,
+				112D1E42282B2293009DE1A0 /* SideBarMenu.swift in Sources */,
 				EB7F3F3C24E78D72003DCD3D /* CanvasVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

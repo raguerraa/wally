@@ -9,7 +9,7 @@
 import UIKit
 import SideMenuSwift
 
-class SideMenuVC: UIViewController {
+class SideBarMenuVC: UIViewController {
     
     let canvasStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let freeCollectionStoryboard = UIStoryboard(name: "FreeCollection", bundle: nil)
@@ -63,3 +63,4 @@ class SideMenuVC: UIViewController {
         sideMenuController?.hideMenu()
     }
 }
+

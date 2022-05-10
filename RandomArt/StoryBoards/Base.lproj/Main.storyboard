@@ -219,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="-796" y="398"/>
         </scene>
-        <!--Side MenuVC-->
+        <!--Side Bar MenuVC-->
         <scene sceneID="MSv-0b-1M9">
             <objects>
-                <viewController storyboardIdentifier="sideMenuVC" id="dqF-DV-QVs" customClass="SideMenuVC" customModule="RandomArt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sideMenuVC" id="dqF-DV-QVs" customClass="SideBarMenuVC" customModule="RandomArt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d04-oP-rLB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
