@@ -1,5 +1,5 @@
 //
-//  sideMenuVC.swift
+//  SideMenuVC.swift
 //  RandomArt
 //
 //  Modified by Ronald on 4/15/22.
@@ -44,13 +44,13 @@ class SideMenuVC: UIViewController {
         profileView.layer.cornerRadius = profileView.frame.height/2
         profileView.clipsToBounds = true
     }
-    
+    // This shows the canvas
     @IBAction func showCanvas(_ sender: Any) {
         
         sideMenuController?.setContentViewController(with: "canvas")
         sideMenuController?.hideMenu()
     }
-    
+    // This shows the PDF
     @IBAction func showHowToChangeWallpaper(_ sender: Any) {
         
         sideMenuController?.setContentViewController(with: "howToChangeWallpaper")
