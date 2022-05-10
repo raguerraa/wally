@@ -11,6 +11,7 @@
 		110163FA27F4BAAC00910BC8 /* FreeCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110163F927F4BAAC00910BC8 /* FreeCollectionVC.swift */; };
 		110163FC27F51F4B00910BC8 /* WallpaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110163FB27F51F4B00910BC8 /* WallpaperCollectionViewCell.swift */; };
 		110163FE27F6AE2E00910BC8 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110163FD27F6AE2E00910BC8 /* Wallpaper.swift */; };
+		112D1E40282B1EFB009DE1A0 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F3D24E78DAE003DCD3D /* SideMenuVC.swift */; };
 		11844E4E2806B35900F354AA /* DownloadExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11844E4D2806B35900F354AA /* DownloadExtension.swift */; };
 		11844E502807A78800F354AA /* HowToChangeWallpaperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11844E4F2807A78800F354AA /* HowToChangeWallpaperVC.swift */; };
 		11844E522807A7DE00F354AA /* HowToChangeWallpaper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11844E512807A7DE00F354AA /* HowToChangeWallpaper.storyboard */; };
@@ -28,7 +29,6 @@
 		EB7F3F1C24E721E2003DCD3D /* RandomArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F1B24E721E2003DCD3D /* RandomArtTests.swift */; };
 		EB7F3F2724E721E2003DCD3D /* RandomArtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F2624E721E2003DCD3D /* RandomArtUITests.swift */; };
 		EB7F3F3C24E78D72003DCD3D /* CanvasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F3B24E78D72003DCD3D /* CanvasVC.swift */; };
-		EB7F3F3E24E78DAE003DCD3D /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F3D24E78DAE003DCD3D /* SideMenuVC.swift */; };
 		EB7F3F4724E89841003DCD3D /* MathBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F4624E89841003DCD3D /* MathBinaryTree.swift */; };
 		EB7F3F4924E8987A003DCD3D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F4824E8987A003DCD3D /* Node.swift */; };
 		EB7F3F4B24EBBA02003DCD3D /* CanvasV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F4A24EBBA02003DCD3D /* CanvasV.swift */; };
@@ -424,9 +424,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB7F3F3E24E78DAE003DCD3D /* SideMenuVC.swift in Sources */,
 				11844E4E2806B35900F354AA /* DownloadExtension.swift in Sources */,
 				EB7F3F4924E8987A003DCD3D /* Node.swift in Sources */,
+				112D1E40282B1EFB009DE1A0 /* SideMenuVC.swift in Sources */,
 				EB7F3F4B24EBBA02003DCD3D /* CanvasV.swift in Sources */,
 				11C0972A2800070300D1A88D /* WallpaperFile.swift in Sources */,
 				110163FE27F6AE2E00910BC8 /* Wallpaper.swift in Sources */,
