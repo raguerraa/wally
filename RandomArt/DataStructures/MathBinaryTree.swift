@@ -18,7 +18,6 @@ import func Darwin.sqrt
 class MathBinaryTree {
     private var DEPTH = 0
     private var root: Node<String>?
-    
     var ar1:[String] = []
     var ar2:[String] = []
     var ar3:[String] = []
