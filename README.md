@@ -1,4 +1,4 @@
-# iWalle Sudoku
+# iWalle
 
 This app generates wallpapers using math operations like multiplication, cos, sin, and average.
 I also experimented with other math operations like tan and division, but cos, sin and average
