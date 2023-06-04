@@ -1,0 +1,705 @@
+{
+  "wallpapers": [
+    {
+      "name": "Parchment Avant-Garde",
+      "complexity": 50,
+      "imageName": "IMG_0",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Parchment Minimalism",
+      "complexity": 50,
+      "imageName": "IMG_1",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Greenish Turquoise Metaphysical Art",
+      "complexity": 50,
+      "imageName": "IMG_2",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Salmon Pink Land Art",
+      "complexity": 50,
+      "imageName": "IMG_3",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Salmon Pink Naturalism",
+      "complexity": 50,
+      "imageName": "IMG_4",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Salmon Pink Modern Art",
+      "complexity": 50,
+      "imageName": "IMG_5",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Green Blue Neo-Fauvism",
+      "complexity": 50,
+      "imageName": "IMG_6",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Green Blue Neo-Geo",
+      "complexity": 50,
+      "imageName": "IMG_7",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Morning Sunlight Perspectivism",
+      "complexity": 50,
+      "imageName": "IMG_8",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Blue Horizon Post-Minimalism",
+      "complexity": 50,
+      "imageName": "IMG_9",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Blueberry Light Postmodernism",
+      "complexity": 50,
+      "imageName": "IMG_10",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Romanticism",
+      "complexity": 75,
+      "imageName": "IMG_11",
+      "dark": true,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Lemon Yellow Secularism",
+      "complexity": 75,
+      "imageName": "IMG_12",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Rainbow Sky Systems Art",
+      "complexity": 75,
+      "imageName": "IMG_13",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Red Tonalism",
+      "complexity": 75,
+      "imageName": "IMG_14",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Neon Pink Neo-Minimalism",
+      "complexity": 75,
+      "imageName": "IMG_15",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Boiling Red Video Art",
+      "complexity": 75,
+      "imageName": "IMG_16",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Very Dark Blue Vorticism",
+      "complexity": 75,
+      "imageName": "IMG_17",
+      "dark": true,
+      "delightful": true,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Green Option Art Deco",
+      "complexity": 75,
+      "imageName": "IMG_18",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Green Afternoon Barbizon School",
+      "complexity": 75,
+      "imageName": "IMG_19",
+      "dark": true,
+      "delightful": true,
+      "vivid": false,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Green Sky Blue Cobra",
+      "complexity": 75,
+      "imageName": "IMG_20",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Classicism",
+      "complexity": 75,
+      "imageName": "IMG_21",
+      "dark": true,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Cubism",
+      "complexity": 75,
+      "imageName": "IMG_22",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": true,
+      "weird": true
+    },
+    {
+      "name": "Dadaism",
+      "complexity": 75,
+      "imageName": "IMG_23",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Ego-Futurism",
+      "complexity": 75,
+      "imageName": "IMG_24",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": true,
+      "weird": true
+    },
+    {
+      "name": "Formalism",
+      "complexity": 75,
+      "imageName": "IMG_25",
+      "dark": true,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Historicism",
+      "complexity": 75,
+      "imageName": "IMG_26",
+      "dark": true,
+      "delightful": true,
+      "vivid": false,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Gothic Art",
+      "complexity": 75,
+      "imageName": "IMG_27",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Dadaism",
+      "complexity": 75,
+      "imageName": "IMG_28",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Baroque",
+      "complexity": 75,
+      "imageName": "IMG_29",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Ego-Futurism",
+      "complexity": 75,
+      "imageName": "IMG_30",
+      "dark": true,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": true
+    },
+    {
+      "name": "Gründerzeit",
+      "complexity": 75,
+      "imageName": "IMG_31",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Humanism",
+      "complexity": 75,
+      "imageName": "IMG_32",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Hyperrealism",
+      "complexity": 75,
+      "imageName": "IMG_33",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Fluxus",
+      "complexity": 75,
+      "imageName": "IMG_34",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Idealism",
+      "complexity": 50,
+      "imageName": "IMG_35",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Illusionism",
+      "complexity": 75,
+      "imageName": "IMG_36",
+      "dark": true,
+      "delightful": true,
+      "vivid": false,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Installation Art",
+      "complexity": 100,
+      "imageName": "IMG_37",
+      "dark": true,
+      "delightful": false,
+      "vivid": false,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Mail Art",
+      "complexity": 100,
+      "imageName": "IMG_38",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": true,
+      "weird": true
+    },
+    {
+      "name": "Lowbrow",
+      "complexity": 100,
+      "imageName": "IMG_39",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Maximalism",
+      "complexity": 100,
+      "imageName": "IMG_40",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": true,
+      "weird": true
+    },
+    {
+      "name": "Modern Art",
+      "complexity": 100,
+      "imageName": "IMG_41",
+      "dark": true,
+      "delightful": true,
+      "vivid": false,
+      "mystical": true,
+      "weird": true
+    },
+    {
+      "name": "Monumentalism",
+      "complexity": 100,
+      "imageName": "IMG_42",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Mannerism",
+      "complexity": 100,
+      "imageName": "IMG_43",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": true,
+      "weird": true
+    },
+    {
+      "name": "Naturalism",
+      "complexity": 100,
+      "imageName": "IMG_44",
+      "dark": false,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": true
+    },
+    {
+      "name": "Salmon Pink Neoism",
+      "complexity": 0,
+      "imageName": "IMG_45",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Neon Orange Pre-Raphaelites",
+      "complexity": 70,
+      "imageName": "IMG_46",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Very Dark Blue Action Painting",
+      "complexity": 75,
+      "imageName": "IMG_47",
+      "dark": true,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Canary Sound Art",
+      "complexity": 70,
+      "imageName": "IMG_48",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Wine Media Cat Art",
+      "complexity": 80,
+      "imageName": "IMG_49",
+      "dark": false,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Gray Brown Pokeball",
+      "complexity": 60,
+      "imageName": "IMG_50",
+      "dark": false,
+      "delightful": false,
+      "vivid": false,
+      "mystical": false,
+      "weird": true
+    },
+    {
+      "name": "Neon Red Carpet Eye Art",
+      "complexity": 100,
+      "imageName": "IMG_51",
+      "dark": false,
+      "delightful": true,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Green Dragon Ball Cell",
+      "complexity": 100,
+      "imageName": "IMG_52",
+      "dark": false,
+      "delightful": false,
+      "vivid": false,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Light Urple Avant-Garde",
+      "complexity": 40,
+      "imageName": "IMG_53",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Green Formalism",
+      "complexity": 100,
+      "imageName": "IMG_54",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Very Dark Blue Game Art",
+      "complexity": 50,
+      "imageName": "IMG_55",
+      "dark": false,
+      "delightful": true,
+      "vivid": false,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Neon Pink Minimalism",
+      "complexity": 30,
+      "imageName": "IMG_56",
+      "dark": false,
+      "delightful": true,
+      "vivid": false,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Green Spooky Idealism",
+      "complexity": 70,
+      "imageName": "IMG_57",
+      "dark": false,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Blue Ocean Humanism",
+      "complexity": 100,
+      "imageName": "IMG_58",
+      "dark": false,
+      "delightful": false,
+      "vivid": false,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Neon Pink Peruvian Blanket",
+      "complexity": 100,
+      "imageName": "IMG_59",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Neon Pink Nasca Lanes",
+      "complexity": 100,
+      "imageName": "IMG_60",
+      "dark": false,
+      "delightful": true,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Blue Ocean Lanes Humanism",
+      "complexity": 100,
+      "imageName": "IMG_61",
+      "dark": false,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Greener Claws",
+      "complexity": 60,
+      "imageName": "IMG_62",
+      "dark": false,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Neon Pink Polar Star",
+      "complexity": 80,
+      "imageName": "IMG_63",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": true,
+      "weird": false
+    },
+    {
+      "name": "Neon Pink Video Game Art",
+      "complexity": 60,
+      "imageName": "IMG_64",
+      "dark": false,
+      "delightful": true,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Red Scuola Romana",
+      "complexity": 50,
+      "imageName": "IMG_65",
+      "dark": false,
+      "delightful": true,
+      "vivid": false,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Russet Gothic X-Men",
+      "complexity": 75,
+      "imageName": "IMG_66",
+      "dark": false,
+      "delightful": true,
+      "vivid": false,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Lightish Red Glasses",
+      "complexity": 67,
+      "imageName": "IMG_67",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Greenish Turquoise Classicism",
+      "complexity": 75,
+      "imageName": "IMG_68",
+      "dark": false,
+      "delightful": false,
+      "vivid": true,
+      "mystical": false,
+      "weird": false
+    },
+    {
+      "name": "Lightish Red Historic Times",
+      "complexity": 75,
+      "imageName": "IMG_70",
+      "dark": true,
+      "delightful": false,
+      "vivid": false,
+      "mystical": true,
+      "weird": true
+    }
+    
+  ]
+}

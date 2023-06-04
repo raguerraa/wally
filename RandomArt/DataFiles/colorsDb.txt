@@ -1,0 +1,949 @@
+﻿0   black
+307   very dark blue
+558   dark navy blue
+859   dark blue
+1077   dark navy
+4422   navy blue
+11524   dark forest green
+17783   prussian blue
+21065   dark blue green
+21850   deep teal
+24426   petrol
+37687   kelley green
+64432   greenish turquoise
+65535   cyan
+69580   true blue
+70974   navy
+79978   marine blue
+82306   darkish blue
+83456   racing green
+85326   dark teal
+87170   deep sea blue
+91644   bright blue
+92053   peacock blue
+95089   dark aquamarine
+95092   deep turquoise
+96889   bluegreen
+97170   ocean
+100511   teal blue
+103721   irish green
+106569   emerald
+111692   shamrock
+114829   green/blue
+129478   bright teal
+130823   bright green
+131125   midnight blue
+132066   pure blue
+132719   dark royal blue
+138233   rich blue
+153871   deep green
+167710   emerald green
+168838   teal
+174894   kelly green
+180557   shamrock green
+183550   bright sky blue
+186601   aqua blue
+196909   midnight
+198500   darkblue
+199335   cobalt blue
+210176   dark green
+211448   vibrant blue
+213983   blue
+225692   ocean blue
+262771   deep blue
+262984   night blue
+274016   marine
+281093   bottle green
+285786   dark turquoise
+291989   sea blue
+295491   jungle green
+296401   cerulean
+317618   aquamarine
+317951   neon blue
+324745   turquoise green
+328874   royal blue
+345898   evergreen
+346125   british racing green
+346375   darkgreen
+354667   dark aqua
+356078   cerulean blue
+393126   bright sea green
+404995   very dark green
+411404   forest green
+414463   electric blue
+432883   azure
+438724   turquoise blue
+439435   green blue
+443052   turquoise
+462093   almost black
+525561   primary blue
+555135   deep aqua
+562180   true green
+589576   fluorescent green
+672634   twilight blue
+673822   pine green
+679736   spruce
+690314   dark cyan
+711944   vibrant green
+720642   fluro green
+737288   hunter green
+742665   forest
+756615   greenish blue
+784253   minty green
+784874   bright aqua
+788215   strong blue
+792467   royal
+832887   green teal
+842867   tealish green
+851724   neon green
+882168   deep sky blue
+952268   water blue
+1022862   blue/green
+1048313   bright turquoise
+1079984   nice blue
+1091188   bluish green
+1148765   dark sea green
+1237395   aqua green
+1277549   blue green
+1293231   topaz
+1305289   aqua
+1388287   vivid blue
+1393670   forrest green
+1396868   light navy
+1421338   green
+1574363   ultramarine blue
+1626491   seaweed
+1778737   dark
+1833990   highlighter green
+1901056   very dark brown
+1924588   azul
+1984655   cobalt
+2003303   viridian
+2029686   spearmint
+2034004   dark indigo
+2046797   dark blue grey
+2057047   dark green blue
+2074484   jade
+2078074   dark seafoam
+2097329   ultramarine
+2146419   dark mint green
+2161030   wintergreen
+2177195   sapphire
+2180961   dark slate blue
+2212719   algae green
+2227213   electric green
+2245319   blue blue
+2344075   greenblue
+2390781   clear blue
+2407592   tealish
+2466671   teal green
+2490153   hot green
+2511757   dusk blue
+2553853   bright light blue
+2583219   mid blue
+2621751   midnight purple
+2653239   darkish green
+2704987   dark grey blue
+2717371   bluish
+2752820   very dark purple
+2784793   tree green
+2817719   greenish cyan
+2841908   pine
+2862954   jade green
+2863481   bluey green
+2912187   medium blue
+2947615   radioactive green
+3014228   bright light green
+3037832   light navy blue
+3074235   aqua marine
+3141392   vivid green
+3237514   ugly blue
+3325828   greenish teal
+3389540   cool green
+3408191   dark violet
+3415042   dark brown
+3422263   charcoal
+3475006   dark purple
+3494666   navy green
+3517803   seaweed green
+3539263   deep purple
+3553079   dark grey
+3620354   dark olive
+3635391   windows blue
+3670658   indigo
+3672117   eggplant
+3702788   dark grass green
+3779912   medium green
+3807409   indigo blue
+3813118   light royal blue
+3859839   weird green
+3890066   denim blue
+3892108   denim
+3895711   muted blue
+3932168   dark maroon
+3948866   charcoal grey
+3951875   dark olive green
+3961768   flat blue
+3971474   sea
+3999540   aubergine
+4004866   chocolate
+4029181   lightish blue
+4036979   ocean green
+4096764   dodger blue
+4108150   dark seafoam green
+4129068   dark plum
+4162205   dirty blue
+4168459   grass green
+4236136   greenish
+4259092   poison green
+4260352   deep brown
+4266240   chocolate brown
+4299779   grassy green
+4324862   bright cyan
+4371349   greeny blue
+4392257   eggplant purple
+4418477   french blue
+4493028   dark sky blue
+4604310   blueberry
+4677524   dusky blue
+4767858   dark mint
+4785736   deep violet
+4814236   dull blue
+4818104   cool blue
+4849920   mahogany
+4915310   royal purple
+4915457   dried blood
+4937691   warm blue
+4939030   army green
+4940051   camouflage green
+5017733   dusty teal
+5088265   lawn green
+5113168   plum purple
+5132683   twilight
+5133441   dusk
+5141654   cadet blue
+5176660   light neon green
+5206926   metallic blue
+5214547   light forest green
+5274524   stormy blue
+5285703   mid green
+5311177   violet blue
+5334386   slate
+5337303   cornflower blue
+5355323   leafy green
+5399845   camo green
+5455046   blue with a hint of purple
+5464679   gunmetal
+5504161   sea green
+5504604   light bright green
+5524995   green brown
+5541188   fern green
+5549160   algae
+5585356   blurple
+5670062   off blue
+5680727   dark pastel green
+5700770   light green blue
+5712334   blue purple
+5771073   plum
+5815304   frog green
+5858669   slate grey
+5866838   dark sage
+5900015   blue/purple
+5930394   steel blue
+5932717   dusty blue
+5995673   slate blue
+6064917   sap green
+6072580   leaf green
+6073389   grass
+6074880   kermit green
+6096617   blue violet
+6100049   grape purple
+6103504   purple/blue
+6193565   greyish blue
+6200202   grey teal
+6216735   green apple
+6239463   purpley blue
+6266511   dull teal
+6266962   muted green
+6299385   purplish blue
+6309391   mud brown
+6317570   mud green
+6323342   blue grey
+6357027   burgundy
+6373615   purpleish blue
+6413866   toxic green
+6414688   lightish green
+6439367   bluey purple
+6445252   iris
+6499817   purple blue
+6523687   mossy green
+6531408   fern
+6533989   boring green
+6551476   light greenish blue
+6575107   olive brown
+6585742   grey/blue
+6588650   soft blue
+6619169   maroon
+6633216   brown
+6648882   muddy green
+6654776   moss green
+6655163   faded blue
+6655341   slate green
+6663036   tea
+6684168   bright lime green
+6691566   purply blue
+6709201   dark periwinkle
+6716478   military green
+6716972   dirty green
+6765119   purple brown
+6781444   olive green
+6815768   claret
+6828771   burple
+6905862   greeny brown
+6906130   greenish brown
+6914873   swamp
+6921548   flat green
+6936655   fresh green
+6974985   brownish green
+6978039   cornflower
+7029319   purplish brown
+7044229   battleship grey
+7048100   grey blue
+7054163   off green
+7091297   grape
+7109134   murky green
+7166671   light indigo
+7204349   robin's egg
+7213061   reddy brown
+7238926   olive
+7260988   apple
+7302154   browny green
+7304754   olive drab
+7306240   poop green
+7307914   steel grey
+7324278   soft green
+7355367   bluish purple
+7367697   brown green
+7385663   nasty green
+7446417   greyish teal
+7449140   leaf
+7471192   rich purple
+7505465   khaki green
+7507714   dark yellow green
+7536697   merlot
+7555685   dirty purple
+7560210   mud
+7570837   steel
+7612418   chestnut
+7636224   swamp green
+7637911   bluish grey
+7640401   drab green
+7644770   dull green
+7669841   velvet
+7674227   darkish purple
+7700480   shit green
+7703971   blue/grey
+7714895   turtle green
+7715837   sky blue
+7732579   lighter green
+7750222   brownish purple
+7772504   moss
+7776627   dusty green
+7785766   apple green
+7798184   light bluish green
+7798651   lightgreen
+7798785   blood
+7836271   green grey
+7840181   greyblue
+7842646   asparagus
+7904115   grey green
+7918006   seafoam blue
+8018177   poop brown
+8022143   purplish grey
+8022607   greyish brown
+8034051   ugly green
+8059307   seafoam green
+8060972   bordeaux
+8061731   wine red
+8083460   shit brown
+8106612   faded green
+8112374   lightblue
+8123098   tiffany blue
+8125895   light aquamarine
+8220931   ugly brown
+8224636   medium grey
+8265372   purple
+8274033   bruise
+8298618   greeny grey
+8305921   dark lime green
+8320204   light turquoise
+8321971   light blue green
+8334090   reddish brown
+8343070   milk chocolate
+8343826   medium brown
+8347136   poop
+8347392   shit
+8349774   dark taupe
+8351827   grey brown
+8359758   camo
+8388927   wine
+8412039   muted purple
+8452525   seafoam
+8521543   red purple
+8544135   dusty purple
+8547724   grey purple
+8553284   drab
+8562301   greyish green
+8571644   sky
+8571826   pale teal
+8611129   dirt brown
+8650752   dark red
+8673662   dull purple
+8697601   dark lime
+8719876   indian red
+8742808   dark lavender
+8758194   bluegrey
+8810373   purple grey
+8812383   brownish grey
+8823165   grey/green
+8866914   dark mauve
+8869604   purpley
+8871746   cocoa
+8875595   dull brown
+8890658   avocado green
+8892019   sage
+8912133   bright lime
+8937217   poo brown
+8939526   muddy brown
+8941969   greyish purple
+8951575   baby shit green
+8958840   sage green
+8996229   light eggplant
+9001851   dusky purple
+9019568   bluey grey
+9019907   vomit green
+9043461   lime green
+9072197   dirt
+9091326   carolina blue
+9105918   robin egg blue
+9121302   red brown
+9122051   rust brown
+9144568   lavender blue
+9175055   crimson
+9175092   red wine
+9239934   easter green
+9240478   baby green
+9240539   light aqua
+9264823   deep lavender
+9274472   brown grey
+9336344   hazel
+9339646   periwinkle
+9349906   pea green
+9364799   kiwi green
+9376770   brick red
+9401091   poo
+9407719   perrywinkle
+9410565   baby poop green
+9411067   periwinkle blue
+9416226   icky green
+9418363   lichen
+9436681   acid green
+9437087   mint green
+9482548   avocado
+9495745   light teal
+9502121   foam green
+9505105   reddish purple
+9531033   faded purple
+9570894   mulberry
+9579269   brown red
+9606545   grey
+9607425   pea soup
+9665536   baby poop
+9721484   purplish
+9729798   puke brown
+9731732   purpley grey
+9741847   pea soup green
+9743362   barf green
+9744924   sickly green
+9776783   warm purple
+9806758   cool grey
+9818364   light blue
+9830486   dark magenta
+9850370   warm brown
+9858749   deep lilac
+9875085   greenish grey
+9876483   booger green
+9894267   light green
+9931396   warm grey
+9961474   blood red
+9977778   purply
+9983629   purpleish
+9985579   sepia
+10022905   robin's egg blue
+10024624   light sea green
+10027258   vivid purple
+10027335   purple red
+10030923   berry
+10057072   reddish grey
+10079236   slime green
+10093056   deep red
+10096362   violet
+10104833   auburn
+10117632   raw sienna
+10137095   puke green
+10155876   light grass green
+10182592   amethyst
+10189313   yellowish brown
+10194773   dark khaki
+10204476   booger
+10216874   hospital green
+10251607   brownish
+10251685   dark lilac
+10271492   bright olive
+10284867   kiwi
+10289686   carmine
+10291033   dark fuchsia
+10311555   light plum
+10319441   mocha
+10336556   sick green
+10337492   light grey blue
+10338560   snot green
+10354432   bright yellow green
+10354746   cranberry
+10355048   red violet
+10368547   brownish red
+10372002   medium purple
+10429189   burnt red
+10453763   diarrhea
+10485424   mint
+10486364   deep magenta
+10486936   barney purple
+10499619   brick
+10503438   burnt umber
+10534678   gross green
+10550975   light seafoam
+10565893   russet
+10635351   light maroon
+10642750   earth
+10658837   vomit
+10665982   pastel blue
+10670078   baby blue
+10764960   ugly purple
+10781868   heather
+10796636   light olive green
+10796832   pea
+10813525   violet red
+10834662   lightish purple
+10836724   lighter purple
+10845778   puce
+10855313   cement
+10855682   puke
+10877909   pale turquoise
+10907573   soft purple
+10912076   coffee
+10930293   light moss green
+10943410   light mint green
+10968585   raw umber
+11009973   light seafoam green
+11025417   rust
+11026779   light burgundy
+11041024   bronze
+11042242   wisteria
+11045125   dark mustard
+11046745   dark sand
+11052181   greyish
+11056388   mustard green
+11075332   electric lime
+11076360   darkish red
+11097630   sienna
+11124336   tan green
+11139441   spring green
+11150335   electric purple
+11151108   rust red
+11183714   khaki
+11206450   lime
+11211321   rouge
+11238988   tan brown
+11243524   baby poo
+11279800   barney
+11292422   cinnamon
+11301940   leather
+11304452   mustard brown
+11306664   dusty lavender
+11309922   dark beige
+11320077   snot
+11321193   light olive
+11322073   cloudy blue
+11337724   light cyan
+11338718   vibrant purple
+11340541   bright violet
+11370832   light brown
+11374605   baby shit brown
+11380103   stone
+11401218   lemon green
+11432321   mauve
+11438860   yellowy brown
+11468140   light lime
+11468654   key lime
+11480845   rusty red
+11497225   caramel
+11503690   dark tan
+11511947   bland
+11534665   raspberry
+11535691   purplish red
+11554319   burnt sienna
+11590934   yellowish green
+11599773   pastel green
+11624450   orangey brown
+11629153   pinkish brown
+11637102   pale brown
+11653628   powder blue
+11653755   pale olive green
+11664537   pale light green
+11665253   pale lime green
+11689731   orangish brown
+11691008   umber
+11694397   clay brown
+11696641   golden brown
+11704069   brown yellow
+11704686   dust
+11729829   light pastel green
+11759606   light urple
+11880541   dark rose
+11899920   dark gold
+11911942   bile
+11914760   green/yellow
+11952933   copper
+11954768   clay
+11977734   baby puke green
+11993019   light mint
+12014083   burnt siena
+12030164   pale purple
+12030976   yellow brown
+12044770   light blue grey
+12050849   light grey green
+12058618   pale cyan
+12124139   pale aqua
+12142670   dusty red
+12151042   brown orange
+12165761   taupe
+12176513   pale olive
+12189542   light lime green
+12216435   dusky rose
+12230280   mushroom
+12271423   dull red
+12318991   yellowgreen
+12325886   neon purple
+12372858   greenish tan
+12381356   light sage
+12383654   washed out green
+12414024   adobe
+12449534   pale sky blue
+12449955   tea green
+12452121   scarlet
+12452156   rose red
+12452861   bright purple
+12477440   orange brown
+12496522   putty
+12516723   pale lime
+12516791   celadon
+12548086   light purple
+12554245   ochre
+12557068   ocher
+12561413   muddy yellow
+12579112   yellowy green
+12582440   lemon lime
+12583471   lipstick red
+12602881   burnt orange
+12612094   easter purple
+12612474   dusty rose
+12647051   pistachio
+12647213   yellow green
+12667401   brick orange
+12699388   light periwinkle
+12711946   chartreuse
+12713365   celery
+12714104   magenta
+12746361   brownish pink
+12751521   light mauve
+12760841   olive yellow
+12762638   puke yellow
+12779401   light yellowish green
+12816539   grey pink
+12844020   duck egg blue
+12862016   reddish
+12866824   rust orange
+12881661   liliac
+12887649   sandy brown
+12910210   light pea green
+12910583   eggshell blue
+12962247   silver
+12996866   dark orange
+13016068   ocre
+13016921   camel
+13039624   greeny yellow
+13040895   light sky blue
+13059943   deep rose
+13066495   bright lavender
+13072774   old pink
+13082607   lavender
+13085821   toupe
+13091084   vomit yellow
+13106613   pale green
+13122745   purpley pink
+13130323   dark salmon
+13137348   orchid
+13137414   dirty orange
+13139849   old rose
+13143444   greyish pink
+13151401   pinkish grey
+13172029   yellow/green
+13172656   light light green
+13192382   pinky purple
+13197051   bright lilac
+13198395   terra cotta
+13217396   sandstone
+13217795   brownish yellow
+13226361   greenish beige
+13238055   green yellow
+13238599   ruby
+13264449   terracotta
+13265666   browny orange
+13269888   dirty pink
+13278199   baby purple
+13279487   pastel purple
+13303803   light light blue
+13304053   hot purple
+13304162   deep pink
+13320555   dark pink
+13330499   terracota
+13334307   brownish orange
+13344006   yellow ochre
+13346144   sand brown
+13367391   pear
+13400715   dusky pink
+13413728   desert
+13434239   light yellow green
+13457673   rusty orange
+13464964   ugly pink
+13485322   dirty yellow
+13499650   greenish yellow
+13524398   purplish pink
+13542141   lilac
+13545210   pale violet
+13546241   mustard
+13566516   cherry
+13587022   dark coral
+13591157   rose
+13610875   fawn
+13630908   very pale green
+13631236   neon yellow
+13680897   ugly yellow
+13689897   sickly yellow
+13696541   lime yellow
+13696766   pale blue
+13727375   muted pink
+13742703   tan
+13762493   very light green
+13810954   mustard yellow
+13846862   faded red
+13874819   very light brown
+13920894   pinkish
+13959167   really light blue
+13965134   lipstick
+13993629   dull pink
+13994644   dusty pink
+14002953   burnt yellow
+14005770   dark yellow
+14024703   very light blue
+14043351   pinkish purple
+14071036   light violet
+14090234   ice
+14090238   very pale blue
+14099934   purple/pink
+14116781   pale magenta
+14155774   ice blue
+14190139   dull orange
+14212310   light grey
+14221670   dark hot pink
+14241781   heliotrope
+14242893   pale red
+14261122   pinkish tan
+14304893   darkish pink
+14371802   pink purple
+14374998   pastel red
+14398476   gold
+14437633   deep orange
+14517719   lavender pink
+14538264   piss yellow
+14552162   cerise
+14581341   dark peach
+14589356   faded pink
+14634696   purpleish pink
+14665214   light lavender
+14696408   purple pink
+14776065   pumpkin
+14862966   sand
+14994431   pale lilac
+15007744   red
+15129254   beige
+15135394   light khaki
+15175333   pig pink
+15478017   tomato red
+15535577   fuchsia
+15583487   light lilac
+15650814   pale lavender
+15653979   dull yellow
+15670759   pink/purple
+15679526   tomato
+15709237   macaroni and cheese
+15712510   light lavendar
+15758822   purply pink
+15762234   dusty orange
+15766605   faded orange
+15797317   pinkish red
+15850106   sandy
+15856447   off yellow
+15900302   blush
+15903509   squash
+15950230   medium pink
+16003596   vermillion
+16004613   orangish red
+16044116   maize
+16057545   hot magenta
+16057679   pink red
+16105219   golden
+16148622   rosy pink
+16174844   very light purple
+16187946   cherry red
+16222106   rose pink
+16242016   light mustard
+16271388   reddish orange
+16347910   orange
+16366600   golden rod
+16394837   red pink
+16400932   orangey red
+16408567   light magenta
+16433669   goldenrod
+16445030   yellowish
+16449099   banana yellow
+16460099   strawberry
+16471425   warm pink
+16474108   violet pink
+16481543   pumpkin orange
+16506238   wheat
+16510636   light tan
+16524871   pinky red
+16538192   coral
+16548426   orangish
+16549546   pinky
+16560129   yellow orange
+16564230   marigold
+16572774   sand yellow
+16578169   straw
+16579713   yellowish tan
+16595974   red orange
+16597278   orange red
+16598617   watermelon
+16603478   grapefruit
+16611727   carnation
+16616777   orangeish
+16624200   light orange
+16625856   soft pink
+16625991   butterscotch
+16627989   orangey yellow
+16630213   pale rose
+16637020   light gold
+16637548   pale gold
+16641651   sandy yellow
+16645630   pale grey
+16645944   lemon yellow
+16645970   lemon
+16645987   canary
+16646146   fire engine red
+16646554   neon pink
+16646577   bright pink
+16646818   shocking pink
+16657492   reddish pink
+16658250   lightish red
+16663055   orangered
+16664229   barbie pink
+16665347   blood orange
+16677756   salmon pink
+16679564   blush pink
+16679884   bubblegum pink
+16680612   rosa
+16689555   light salmon
+16691721   saffron
+16691976   amber
+16696853   golden yellow
+16699644   pale mauve
+16703240   dandelion
+16709278   buff
+16710831   parchment
+16711551   faded yellow
+16711626   ecru
+16711693   bright red
+16712333   hot pink
+16712848   electric pink
+16713530   neon red
+16713609   strong pink
+16713960   bright magenta
+16729932   light red
+16734976   bright orange
+16736611   coral pink
+16737257   candy pink
+16738735   bubble gum pink
+16739509   bubblegum
+16740178   orange pink
+16740940   pinkish orange
+16742485   melon
+16742764   salmon
+16744359   carnation pink
+16744896   pink
+16749576   tangerine
+16750159   pastel orange
+16751242   peachy pink
+16754219   mango
+16754518   pale orange
+16755471   yellowish orange
+16755969   orange yellow
+16756860   peach
+16757101   apricot
+16757146   pale salmon
+16757456   powder pink
+16758734   baby pink
+16759501   pastel pink
+16762130   sunflower
+16762315   light rose
+16764892   pale pink
+16765407   light pink
+16767153   light peach
+16767491   sunflower yellow
+16768802   sun yellow
+16769902   yellow tan
+16770477   pale peach
+16774042   dark cream
+16774386   very light pink
+16775447   sunny yellow
+16775632   pale
+16775814   manilla
+16776388   egg shell
+16776449   bright yellow
+16776503   sunshine yellow
+16776564   butter yellow
+16776568   custard
+16776768   canary yellow
+16776817   pastel yellow
+16776826   light yellow
+16776886   light beige
+16776980   yellow
+16777086   banana
+16777089   butter
+16777092   pale yellow
+16777142   creme
+16777154   cream
+16777163   ivory
+16777172   eggshell
+16777188   off white
+16777215   white
