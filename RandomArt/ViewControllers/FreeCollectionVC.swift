@@ -2,7 +2,7 @@
 //  FreeCollectionVC.swift
 //  RandomArt
 //
-//  Modified by Ronald on 4/15/22.
+//  Modified by Ronald on 06/04/23.
 //  Copyright © 2020 Ronald. All rights reserved.
 //
 //  This is a compilation of some interesting generated wallpapers that the user doesn't need to
@@ -10,7 +10,7 @@
 //  user search for interesting wallpapers easier.
  
 import UIKit
-import CoreData
+
 
 class FreeCollectionVC: UIViewController {
 
@@ -30,7 +30,12 @@ class FreeCollectionVC: UIViewController {
         
         artworkCollection.delegate = self
         artworkCollection.dataSource = self
-        wallpapers = loadWallpapers() ?? []
+        
+        do{
+            wallpapers = try loadWallpapers()
+        } catch {
+            wallpapers = []
+        }
         
         let gesture = UILongPressGestureRecognizer(target: self, action:#selector(handleLongPress(_:)))
         artworkCollection.addGestureRecognizer(gesture)
@@ -55,33 +60,31 @@ class FreeCollectionVC: UIViewController {
         }
     }
     
-    // This will read all wallpapers from wallpapers.json and nil if there is an error.
-    private func loadWallpapers()->[Wallpaper]?{
-        
-        guard let path = Bundle.main.path(forResource: "wallpapers", ofType:"json" ) else {
-            // TODO: Inform the user that wallpapers.json was not found.
-            assertionFailure("Error: wallpapers.json not found")
-            return nil
+    // This method loads all wallpapers from the 'wallpapers.json' file.
+    // It throws a 'FileError' if there is an error while reading or parsing the file.
+    private func loadWallpapers() throws -> [Wallpaper] {
+        guard let path = Bundle.main.path(forResource: "wallpapers", ofType: "json") else {
+            // TODO: Inform the user that 'wallpapers.json' was not found.
+            throw FileError.fileNotFound("wallpapers.json")
         }
         
         var wallpaperFile: WallpaperFile?
         
         let url = URL(fileURLWithPath: path)
         
-        do{
+        do {
             let jsonData = try Data(contentsOf: url)
             wallpaperFile = try JSONDecoder().decode(WallpaperFile.self, from: jsonData)
             
             if let wallpaperFile = wallpaperFile {
                 return wallpaperFile.wallpapers
-            }else{
-                assertionFailure("Error: Failed to parse file wallpapers.json")
+            } else {
+                throw FileError.fileParseError(path)
             }
             
-        }catch {
-            assertionFailure("Error: loading file wallpapers.json")
+        } catch {
+            throw FileError.fileReadError(path)
         }
-        return nil
     }
     
     // This will show wallpapers that are vivid
@@ -145,7 +148,12 @@ class FreeCollectionVC: UIViewController {
     // are active to the collection.
     private func applyTag(isSelected: Bool, button:UIButton?){
         
-        wallpapers = loadWallpapers() ?? []
+        do {
+            wallpapers = try loadWallpapers()
+        } catch {
+            wallpapers = []
+        }
+        
         if isSelected {
             makeSelected(button: button)
         }else {

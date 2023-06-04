@@ -62,6 +62,5 @@ extension PDFView {
                 return
             }
         }
-        print("PDFView.disableBouncing: FAILED!")
     }
 }
