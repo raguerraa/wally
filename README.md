@@ -9,6 +9,34 @@ photo library.
 
 <img src="Images/screens.png" alt="drawing" width="600"/>
 
+## How to Run the Project
+
+Since the project already have all necessary CocoaPods files, we just need to clone and run a project 
+in Xcode. Follow these steps:
+
+* Clone the project: Open Terminal and navigate to the directory where you want to clone the project. 
+Then run the following command: 
+`git clone https://github.com/raguerraa/wally.git`
+
+* Navigate to the project directory: Use the cd command in Terminal to navigate to the project's directory:
+`cd wally`
+
+* Open the project: Launch Xcode and select "Open" from the File menu. Navigate to the cloned project 
+directory and select the file `RandomArt.xcworkspace` to open the project. The .xcworkspace file is 
+used for projects that include CocoaPods dependencies.
+
+* Select a target device: In Xcode, select the target device (simulator or physical device) you want 
+to run the project on. You can choose the device from the scheme dropdown menu in the top left corner
+of the Xcode window.
+
+* Build and run the project: Click the "Run" button in Xcode or use the "Command + R" shortcut to build 
+and run the project. Xcode will automatically handle the installation of CocoaPods dependencies and 
+compile the project. The app will then launch on the selected target device.
+
+By following these steps, you should be able to clone the project, open it in Xcode using the 
+.xcworkspace file, select a target device, and build and run the project with the CocoaPods 
+dependencies already set up.
+
 ## Simple Wallpapers:
 <img src="Images/relationalArt.png" alt="drawing" width="350"/>
 <img src="Images/russetPopArt.png" alt="drawing" width="350"/>
