@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A17A11002026111900000008 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A17A11002026111900000007 /* PrivacyInfo.xcprivacy */; };
 		A17A11002026111900000006 /* WallpaperLaunchAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17A11002026111900000005 /* WallpaperLaunchAnimationView.swift */; };
 		A17A11002026111900000004 /* WallpaperFormulaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17A11002026111900000003 /* WallpaperFormulaVC.swift */; };
 		A17A11002026111900000002 /* StudioTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17A11002026111900000001 /* StudioTheme.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A17A11002026111900000007 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		A17A11002026111900000005 /* WallpaperLaunchAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperLaunchAnimationView.swift; sourceTree = "<group>"; };
 		A17A11002026111900000003 /* WallpaperFormulaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperFormulaVC.swift; sourceTree = "<group>"; };
 		A17A11002026111900000001 /* StudioTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTheme.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				EB7F3F0424E721E1003DCD3D /* AppDelegate.swift */,
 				EB7F3F0624E721E1003DCD3D /* SceneDelegate.swift */,
 				EB7F3F1224E721E2003DCD3D /* Info.plist */,
+				A17A11002026111900000007 /* PrivacyInfo.xcprivacy */,
 				EBFFD2EC2519806E00B1641D /* Assets.xcassets */,
 			);
 			path = RandomArt;
@@ -371,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17A11002026111900000008 /* PrivacyInfo.xcprivacy in Resources */,
 				11C0970027FD618000D1A88D /* artWords.txt in Resources */,
 				11C0972827FFFDE900D1A88D /* wallpapers.json in Resources */,
 				110163F827F4B6B400910BC8 /* FreeCollection.storyboard in Resources */,
@@ -687,7 +691,7 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11;
-				PRODUCT_BUNDLE_IDENTIFIER = ronalds.RandomArt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PandaApps.Walle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -708,7 +712,7 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11;
-				PRODUCT_BUNDLE_IDENTIFIER = ronalds.RandomArt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PandaApps.Walle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

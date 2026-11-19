@@ -105,6 +105,9 @@ The lockfile pins **NVActivityIndicatorView 5.1.1** and **SideMenuSwift 2.0.9**.
 | [Algorithm and history](docs/algorithm.md) | Expression trees, coordinate mapping, all operations, a worked pixel, depth/cost, and historical context. |
 | [Architecture](docs/architecture.md) | Component ownership, rendering, busy states, Photos callbacks, formula consistency, lifecycle, and data storage. |
 | [Development](docs/development.md) | Setup, tests, dependency fixes, common changes, and contribution workflow. |
+| [Release preparation](docs/release-preparation.md) | App identity, privacy declarations, signing, and App Store release status. |
+| [App Store copy](docs/app-store-copy.md) | Release notes, reviewer steps, and native screenshot candidates. |
+| [Privacy policy](docs/privacy-policy.md) | How wallpaper generation, Photos saving, and formula copying handle information. |
 | [Figure source](scripts/render_doc_illustrations.py) | How the RGB and depth illustrations are generated; optional Python tooling, separate from the iOS app. |
 
 ### Current boundaries

@@ -9,11 +9,6 @@
 
 import UIKit
 
-enum StorageType {
-    case userDefaults
-    case fileSystem
-}
-
 // A completion-based interface also lets tests simulate a slow or failed save
 // without creating real photos or showing a system permission prompt.
 protocol PhotoLibrarySaving {
@@ -52,7 +47,7 @@ final class PhotoLibrarySaver: NSObject, PhotoLibrarySaving {
 }
 
 extension UIViewController {
-    
+
     // Completion means Photos has finished (success OR failure), not just
     // that an export image exists. Existing gallery callers can omit it.
     func saveImage(
@@ -82,33 +77,5 @@ extension UIViewController {
                 self.present(alert, animated: true)
             }
         }
-    }
-
-    // This methods saves the image to the file system or the user defaults.
-    fileprivate func store(image: UIImage, forKey key: String, withStorageType storageType: StorageType) {
-        if let pngRepresentation = image.pngData() {
-            switch storageType {
-            case .fileSystem:
-                // Save to disk
-               if let filePath = filePath(forKey: key) {
-                    do  {
-                        try pngRepresentation.write(to: filePath,
-                                                    options: .atomic)
-                    } catch let err {
-                        print("Saving file resulted in error: ", err)
-                    }
-                }
-            case .userDefaults:
-                UserDefaults.standard.set(pngRepresentation, forKey: key)
-            }
-        }
-    }
-    // This method creates a file path with the name, key, for the image.
-    fileprivate func filePath(forKey key: String) -> URL? {
-        let fileManager = FileManager.default
-        guard let documentURL = fileManager.urls(for: .documentDirectory,in:
-            FileManager.SearchPathDomainMask.userDomainMask).first else { return nil }
-        
-        return documentURL.appendingPathComponent(key + ".png")
     }
 }

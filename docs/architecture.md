@@ -81,6 +81,6 @@ The studio's dark gradient, titles, buttons, and panels are separate views above
 
 The Collection reads **70 bundled entries** from [wallpapers.json](../RandomArt/DataFiles/wallpapers.json) and their asset images. Selected vivid/dark flags are combined as filters; selected complexity values are alternatives. Drag reordering modifies the displayed array in memory. Applying filters rebuilds that array from the catalog.
 
-The current generated equations survive navigation within the running app, but are not persisted across launches. Saving creates a photo; it does not add a formula record to a personal collection. The Core Data container in `AppDelegate` and older storage helpers are scaffolding, not an active wallpaper persistence system.
+The current generated equations survive navigation within the running app, but are not persisted across launches. Saving creates a photo; it does not add a formula record to a personal collection. The Core Data container in `AppDelegate` remains unused scaffolding; the app does not currently persist wallpaper formulas.
 
 Rendering currently uses CPU recursion and has no cancellation, seed replay, or GPU path. The serial queue prevents overlapping pixel jobs within a canvas; the controller's busy guard prevents duplicate user requests.

@@ -101,7 +101,17 @@ class SideBarMenuVC: UIViewController {
         let footer = StudioTheme.label("A little mathematics.\nSomething entirely yours.", size: 13,
                                        color: StudioTheme.secondaryText)
         footer.numberOfLines = 0
-        let footerStack = UIStackView(arrangedSubviews: [rule, footerTitle, footer])
+        let privacy = UIButton(type: .system)
+        privacy.setTitle("Privacy Policy", for: .normal)
+        privacy.setTitleColor(StudioTheme.lavender, for: .normal)
+        privacy.titleLabel?.font = StudioTheme.font(13, weight: .medium)
+        privacy.titleLabel?.adjustsFontForContentSizeCategory = true
+        privacy.contentHorizontalAlignment = .left
+        privacy.accessibilityIdentifier = "privacyPolicy"
+        privacy.accessibilityHint = "Opens the privacy policy in your browser"
+        privacy.addTarget(self, action: #selector(openPrivacyPolicy), for: .touchUpInside)
+        privacy.heightAnchor.constraint(greaterThanOrEqualToConstant: 44).isActive = true
+        let footerStack = UIStackView(arrangedSubviews: [rule, footerTitle, footer, privacy])
         footerStack.axis = .vertical
         footerStack.spacing = 12
 
@@ -202,6 +212,11 @@ class SideBarMenuVC: UIViewController {
     }
 
     @objc private func closeMenu() { sideMenuController?.hideMenu() }
+
+    @objc private func openPrivacyPolicy() {
+        guard let url = URL(string: "https://github.com/raguerraa/wally/blob/master/docs/privacy-policy.md") else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
 
     @IBAction func showCanvas(_ sender: Any) {
         selectItem(0)
