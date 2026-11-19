@@ -1,0 +1,6 @@
+framework module Pods_RandomArt_RandomArtTests {
+  umbrella header "Pods-RandomArt-RandomArtTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

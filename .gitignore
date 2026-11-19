@@ -1,0 +1,51 @@
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode: local user settings and generated build/test output
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+build/
+DerivedData/
+*.xcresult/
+*.xcarchive/
+*.ipa
+*.dSYM/
+*.dSYM.zip
+
+# Swift package build output (keep dependency lockfiles)
+.build/
+
+# Optional Python documentation tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local editor state and temporary files
+.idea/
+*.swp
+*.swo
+*~
+*.log
+
+# Local secrets and signing material
+.env
+.env.*
+!.env.example
+!.env.sample
+*.p12
+*.pfx
+*.p8
+*.key
+*.mobileprovision
+*.provisionprofile
+
+# This repository intentionally vendors CocoaPods dependencies.
+# Keep Pods/, Podfile, Podfile.lock, the workspace, shared schemes,
+# source files, app assets, and documentation under version control.

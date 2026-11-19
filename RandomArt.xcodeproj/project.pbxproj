@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A17A11002026111900000006 /* WallpaperLaunchAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17A11002026111900000005 /* WallpaperLaunchAnimationView.swift */; };
+		A17A11002026111900000004 /* WallpaperFormulaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17A11002026111900000003 /* WallpaperFormulaVC.swift */; };
+		A17A11002026111900000002 /* StudioTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17A11002026111900000001 /* StudioTheme.swift */; };
 		110163F827F4B6B400910BC8 /* FreeCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110163F727F4B6B400910BC8 /* FreeCollection.storyboard */; };
 		110163FA27F4BAAC00910BC8 /* FreeCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110163F927F4BAAC00910BC8 /* FreeCollectionVC.swift */; };
 		110163FC27F51F4B00910BC8 /* WallpaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110163FB27F51F4B00910BC8 /* WallpaperCollectionViewCell.swift */; };
@@ -22,6 +25,7 @@
 		11C0972827FFFDE900D1A88D /* wallpapers.json in Resources */ = {isa = PBXBuildFile; fileRef = 11C0972727FFFDE900D1A88D /* wallpapers.json */; };
 		11C0972A2800070300D1A88D /* WallpaperFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C097292800070300D1A88D /* WallpaperFile.swift */; };
 		11C0972C28063CAF00D1A88D /* DownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C0972B28063CAF00D1A88D /* DownloadVC.swift */; };
+		B6E0B0971BFEA3A359976458 /* Pods_RandomArt_RandomArtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850EEDC1C2B2735DDEE325E8 /* Pods_RandomArt_RandomArtTests.framework */; };
 		D1A042CD3A8DD316C6AB7390 /* Pods_RandomArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66736AD5C9E92A099F8E51A /* Pods_RandomArt.framework */; };
 		EB7F3F0524E721E1003DCD3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F0424E721E1003DCD3D /* AppDelegate.swift */; };
 		EB7F3F0724E721E1003DCD3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F3F0624E721E1003DCD3D /* SceneDelegate.swift */; };
@@ -54,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A17A11002026111900000005 /* WallpaperLaunchAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperLaunchAnimationView.swift; sourceTree = "<group>"; };
+		A17A11002026111900000003 /* WallpaperFormulaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperFormulaVC.swift; sourceTree = "<group>"; };
+		A17A11002026111900000001 /* StudioTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTheme.swift; sourceTree = "<group>"; };
 		110163F727F4B6B400910BC8 /* FreeCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FreeCollection.storyboard; sourceTree = "<group>"; };
 		110163F927F4BAAC00910BC8 /* FreeCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeCollectionVC.swift; sourceTree = "<group>"; };
 		110163FB27F51F4B00910BC8 /* WallpaperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -69,8 +76,11 @@
 		11C0972727FFFDE900D1A88D /* wallpapers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wallpapers.json; sourceTree = "<group>"; };
 		11C097292800070300D1A88D /* WallpaperFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperFile.swift; sourceTree = "<group>"; };
 		11C0972B28063CAF00D1A88D /* DownloadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadVC.swift; sourceTree = "<group>"; };
+		850EEDC1C2B2735DDEE325E8 /* Pods_RandomArt_RandomArtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomArt_RandomArtTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6069D5EB9FE40692C9F01E /* Pods-RandomArt-RandomArtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomArt-RandomArtTests.debug.xcconfig"; path = "Target Support Files/Pods-RandomArt-RandomArtTests/Pods-RandomArt-RandomArtTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B1E1176E7EAF03D3420532E0 /* Pods-RandomArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomArt.release.xcconfig"; path = "Target Support Files/Pods-RandomArt/Pods-RandomArt.release.xcconfig"; sourceTree = "<group>"; };
 		C66736AD5C9E92A099F8E51A /* Pods_RandomArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3728726AB9E56807D640300 /* Pods-RandomArt-RandomArtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomArt-RandomArtTests.release.xcconfig"; path = "Target Support Files/Pods-RandomArt-RandomArtTests/Pods-RandomArt-RandomArtTests.release.xcconfig"; sourceTree = "<group>"; };
 		E595757E0AEFB5B2C91A120E /* Pods-RandomArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomArt.debug.xcconfig"; path = "Target Support Files/Pods-RandomArt/Pods-RandomArt.debug.xcconfig"; sourceTree = "<group>"; };
 		EB7F3F0124E721E1003DCD3D /* RandomArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7F3F0424E721E1003DCD3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E0B0971BFEA3A359976458 /* Pods_RandomArt_RandomArtTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				C66736AD5C9E92A099F8E51A /* Pods_RandomArt.framework */,
+				850EEDC1C2B2735DDEE325E8 /* Pods_RandomArt_RandomArtTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +161,8 @@
 			children = (
 				E595757E0AEFB5B2C91A120E /* Pods-RandomArt.debug.xcconfig */,
 				B1E1176E7EAF03D3420532E0 /* Pods-RandomArt.release.xcconfig */,
+				8C6069D5EB9FE40692C9F01E /* Pods-RandomArt-RandomArtTests.debug.xcconfig */,
+				D3728726AB9E56807D640300 /* Pods-RandomArt-RandomArtTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -183,6 +197,7 @@
 				EB7F3F4324E89501003DCD3D /* DataStructures */,
 				EB7F3F3624E73D38003DCD3D /* ViewControllers */,
 				EB7F3F3424E73D0A003DCD3D /* StoryBoards */,
+				A17A11002026111900000001 /* StudioTheme.swift */,
 				EB7F3F0424E721E1003DCD3D /* AppDelegate.swift */,
 				EB7F3F0624E721E1003DCD3D /* SceneDelegate.swift */,
 				EB7F3F1224E721E2003DCD3D /* Info.plist */,
@@ -224,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				EB7F3F3B24E78D72003DCD3D /* CanvasVC.swift */,
+				A17A11002026111900000003 /* WallpaperFormulaVC.swift */,
+				A17A11002026111900000005 /* WallpaperLaunchAnimationView.swift */,
 				EB7F3F4A24EBBA02003DCD3D /* CanvasV.swift */,
 				110163F927F4BAAC00910BC8 /* FreeCollectionVC.swift */,
 				11C0972B28063CAF00D1A88D /* DownloadVC.swift */,
@@ -272,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB7F3F2E24E721E2003DCD3D /* Build configuration list for PBXNativeTarget "RandomArtTests" */;
 			buildPhases = (
+				4C9B705B9AFEECBEE898B798 /* [CP] Check Pods Manifest.lock */,
 				EB7F3F1324E721E2003DCD3D /* Sources */,
 				EB7F3F1424E721E2003DCD3D /* Frameworks */,
 				EB7F3F1524E721E2003DCD3D /* Resources */,
+				E37783F8550DF5153E41E2F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,6 +400,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4C9B705B9AFEECBEE898B798 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomArt-RandomArtTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5EFF6AA6E5DB34F72984D3FB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +437,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomArt/Pods-RandomArt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E37783F8550DF5153E41E2F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomArt-RandomArtTests/Pods-RandomArt-RandomArtTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomArt-RandomArtTests/Pods-RandomArt-RandomArtTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomArt-RandomArtTests/Pods-RandomArt-RandomArtTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA6EE1526049A7FAC60E9983 /* [CP] Check Pods Manifest.lock */ = {
@@ -427,6 +485,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17A11002026111900000004 /* WallpaperFormulaVC.swift in Sources */,
+				A17A11002026111900000006 /* WallpaperLaunchAnimationView.swift in Sources */,
+				A17A11002026111900000002 /* StudioTheme.swift in Sources */,
 				11844E4E2806B35900F354AA /* DownloadExtension.swift in Sources */,
 				EB7F3F4924E8987A003DCD3D /* Node.swift in Sources */,
 				1176E3732A2D588200A1B238 /* FileError.swift in Sources */,
@@ -656,6 +717,7 @@
 		};
 		EB7F3F2F24E721E2003DCD3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6069D5EB9FE40692C9F01E /* Pods-RandomArt-RandomArtTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -677,6 +739,7 @@
 		};
 		EB7F3F3024E721E2003DCD3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3728726AB9E56807D640300 /* Pods-RandomArt-RandomArtTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

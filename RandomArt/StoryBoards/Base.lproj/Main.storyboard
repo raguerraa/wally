@@ -196,6 +196,7 @@
                         <outlet property="pressMeView" destination="aEL-2d-9hg" id="tki-1t-JIV"/>
                         <outlet property="progressView" destination="lQZ-Wn-lsF" id="yqT-PP-o3b"/>
                         <outlet property="slider" destination="eAd-Ut-iNc" id="Xl9-n5-Gl6"/>
+                        <outlet property="saveButton" destination="hRJ-f2-thk" id="RgB-ss-V01"/>
                         <outlet property="topBar" destination="dfj-vU-QdC" id="BU1-Pz-l0f"/>
                     </connections>
                 </viewController>

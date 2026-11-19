@@ -7,4 +7,9 @@ target 'RandomArt' do
   pod 'SideMenuSwift'
   pod 'NVActivityIndicatorView'
 
+  # Tests import the app module, which depends on these frameworks.
+  target 'RandomArtTests' do
+    inherit! :complete
+  end
+
 end
