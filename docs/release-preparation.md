@@ -80,4 +80,6 @@ The existing listing name **iWalle** was preserved. The subtitle is **Wallpapers
 
 The live state is **Ready for Review**, with **Draft Submissions (1)** and an item marked **Ready to Submit**. **Submit for Review** is enabled and has not been clicked. The final review submission remains the user’s action. If Apple approves the version, manual release leaves **Release This Version** as a separate user action. No beta-group assignment has been performed.
 
-Use the published policy URL above in the App Store Connect privacy-policy field. Rebuild and use a new build number if app content changes after the uploaded 1.1 (2) build.
+The App Store Connect privacy-policy field retains the existing URL, https://iwalle-privacypolicy.web.app/, at the owner’s request. The replacement GitHub policy is public and is used by the in-app menu button. The older hosted page contains generic diagnostic-data and personal-information wording that does not match the audited app; its text should be reconciled with the current policy. The attempted URL change did not persist in App Store Connect, so the existing URL was left in place and the release draft was restored for the owner’s review.
+
+Rebuild and use a new build number if app content changes after the uploaded 1.1 (2) build.
