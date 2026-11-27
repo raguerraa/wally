@@ -4,14 +4,14 @@
 
 ## Release identity
 
-The prepared release is **1.1 (build 2)**. App Store Connect history was checked against the existing 1.0 (build 1) release before choosing these values. The 1.1 (2) submission was rejected on November 25, 2026 under Guideline 4.3(a). The local branding correction to **iWalle** is newer than the submitted binary; a subsequent upload requires a new build number.
+The latest uploaded build is **1.1 (build 3)**, with consistent **iWalle** branding. App Store Connect history was checked against the original 1.0 (build 1) release. Version 1.1 (build 2) was rejected on November 25, 2026 under Guideline 4.3(a). Build 3 preserves the marketing version and bundle identifier while correcting the spelling and increasing the build number.
 
 | Setting | Release value |
 | --- | --- |
 | App Store app | iWalle, Apple ID `1623764539` |
 | Bundle identifier | `com.PandaApps.Walle` |
 | Version | `1.1` |
-| Build | `2` |
+| Build | `3` |
 | Signing team | `J6522LJSM9` |
 | Signing style | Automatic |
 
@@ -45,7 +45,13 @@ Apple's [property-list documentation](https://developer.apple.com/documentation/
 
 ## Archive and distribution
 
-The final signed Release archive for generic iOS succeeded with Xcode 26.2 and the iOS 26.2 SDK after the Privacy Policy button was added. It contains bundle identifier `com.PandaApps.Walle`, version `1.1`, build `2`, the privacy manifest, the updated Photos purpose text, the encryption declaration, and the new menu link. The exact policy URL was verified in the compiled executable.
+### Build 3 — branding correction
+
+The signed Release archive was built and uploaded successfully on November 26, 2026. Its Info.plist was checked for display name `iWalle`, bundle identifier `com.PandaApps.Walle`, version `1.1`, and build `3`. Deep, strict signature verification passed before upload; the privacy manifest is included. The archive and export settings are retained in `~/Library/Developer/Xcode/iWalleReleasePreparation/1.1-build3/`. Xcode reported **Upload succeeded** and **EXPORT SUCCEEDED** at 4:54 PM Pacific time. The last App Store Connect check showed build 3 processing; it was not yet attached to the submission. A fresh screenshot test stalled, so previously submitted screenshots were preserved. Full runtime verification remains outstanding. The source still targets iOS 13.0 and was built with the iOS 26.2 SDK.
+
+### Build 2 — previous submission
+
+The signed Release archive for generic iOS succeeded with Xcode 26.2 and the iOS 26.2 SDK after the Privacy Policy button was added. It contains bundle identifier `com.PandaApps.Walle`, version `1.1`, build `2`, the privacy manifest, the updated Photos purpose text, the encryption declaration, and the new menu link. The exact policy URL was verified in the compiled executable.
 
 The archive uses the existing Apple Development identity and development provisioning profile. The subsequent App Store export and upload succeeded through the configured Xcode account and automatic-signing workflow. Xcode handles distribution signing during export; [cloud-managed signing](https://developer.apple.com/help/account/certificates/cloud-managed-certificates/) is also available through the Organizer distribution flow.
 
@@ -57,7 +63,7 @@ Xcode reported **Upload succeeded** and **EXPORT SUCCEEDED**, with exit code 0, 
 
 The upload returned two future-requirement warnings: starting April 2027, it says uploads and distribution submissions must use the iOS 27 SDK included in Xcode 27 or later, and iOS apps must target iOS 15 or later. These warnings did not prevent this upload. Recheck Apple’s current requirements before a later release.
 
-## Verification performed
+## Verification performed for build 2
 
 - Property-list validation passed for the app manifest, app Info.plist, Xcode project, and prepared export options.
 - The signed generic-iOS Release archive succeeded for 1.1 (2) with the original App Store bundle identifier.
@@ -78,8 +84,8 @@ App Store Connect initially blocked new-version creation with an Agreement Updat
 
 The existing listing name **iWalle** was preserved. The subtitle is **Wallpapers made with math**. All five screenshots, the release metadata, and App Review contact details are saved in App Store Connect. The age-rating questionnaire is complete with a **4+** rating, the privacy declaration remains **Data Not Collected**, and **manual release** is selected. Private account and review-contact details are maintained in App Store Connect.
 
-The owner submitted version 1.1 (2). Apple rejected it under Guideline 4.3(a) on November 25, 2026. The local naming correction does not change the uploaded binary or resolve the rejection by itself. No new build has been uploaded or resubmitted. Manual release remains selected.
+The owner submitted version 1.1 (2). Apple rejected it under Guideline 4.3(a) on November 25, 2026. Build 3 corrects the branding in the replacement binary. The updated description, promotional text, release notes and reviewer instructions were saved in App Store Connect, including the August 2020 development history. The naming correction alone does not establish that Apple’s concern has been resolved. No resubmission was performed during preparation of build 3. Manual release remains selected.
 
 The App Store Connect privacy-policy field retains the existing URL, https://iwalle-privacypolicy.web.app/, at the owner’s request. The replacement GitHub policy is public and is used by the in-app menu button. The older hosted page contains generic diagnostic-data and personal-information wording that does not match the audited app; its text should be reconciled with the current policy. The attempted URL change did not persist in App Store Connect, so the existing URL was left in place and the release draft was restored for the owner’s review.
 
-Rebuild and use a new build number if app content changes after the uploaded 1.1 (2) build.
+Rebuild and increment the build number beyond 3 for any subsequent binary upload; use a new marketing version when appropriate. The next submission and release remain the owner’s actions.

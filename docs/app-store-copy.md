@@ -1,73 +1,75 @@
 # App Store copy
 
-This file records the English copy prepared for **version 1.1 (build 2)**. The App Store listing, local app branding, and repository documentation use **iWalle**. The local naming correction is newer than the submitted build. The saved subtitle is **Wallpapers made with math**.
+This file records the English metadata saved for **version 1.1 (build 3)** of **iWalle** on November 26, 2026. The original App Store listing name and the corrected installed app name now match. The subtitle remains **Wallpapers made with math**.
 
-The App Store Connect draft passed Add for Review validation before submission; Apple rejected build 2 under Guideline 4.3(a) on November 25, 2026. All five screenshots, release metadata, and App Review contact information are saved. The age-rating questionnaire is complete at **4+**, privacy remains **Data Not Collected**, and manual release is selected. The approved [privacy policy](https://github.com/raguerraa/wally/blob/master/docs/privacy-policy.md) is published and publicly verified.
+Build 2 was rejected under Guideline 4.3(a) on November 25, 2026. Build 3 was signed and uploaded successfully; at the last verification, Apple was still processing it and build 2 remained attached. Updated metadata and reviewer evidence were saved, but no resubmission was performed. The existing age rating, privacy declaration and manual release settings were retained.
 
-Any subsequent submission and manual release remain the owner’s actions. The screenshot section below records how the uploaded assets were prepared.
+The screenshots below document the previous build. The screenshot test for build 3 stalled, so fresh captures remain outstanding. Any subsequent submission and manual release remain the owner’s actions.
 
-## Suggested subtitle
+## Saved subtitle
 
 Wallpapers made with math
 
-## Suggested promotional text
+## Promotional text
 
-Create colorful wallpapers from mathematical expressions. Explore the formulas, adjust complexity, and save the artwork you like.
+Create mathematical artwork with iWalle. Explore RGB expressions, adjust complexity, and save the images you generate.
 
 ## Description
 
-Turn a little math into colorful wallpapers for your iPhone.
+iWalle is a mathematical art studio that turns recursive expressions into artwork for your iPhone.
 
-Choose a complexity, tap Generate, and explore abstract compositions made from mathematical expressions. Each image combines red, green, and blue functions evaluated across the canvas.
+CREATE ART WITH MATH
+Choose a complexity, tap Generate, and explore abstract compositions made from mathematical expressions. Each image combines three functions evaluated across the canvas: one for red, one for green, and one for blue.
 
-CREATE YOUR NEXT WALLPAPER
-Generate a new composition and adjust complexity before your next creation. Explore different combinations of color, shape, and pattern.
+EXPLORE THE EXPRESSIONS
+Open View formula to inspect the exact red, green, and blue expressions behind your generated image. Learn how coordinates and mathematical values become colors. Copy the formulas to explore them further.
 
-SEE THE MATH BEHIND IT
-Open View formula to inspect the red, green, and blue expressions used for your generated wallpaper. Copy all three formulas to explore them further.
+ADJUST COMPLEXITY
+The complexity control changes the depth of the mathematical expressions used for your next composition.
 
-SAVE THE ARTWORK
-Save a fresh render of your wallpaper to Photos. Your saved image contains the artwork without the studio controls.
+SAVE YOUR CREATION
+Save a fresh render of your artwork to Photos using the same mathematical expressions, without the studio controls.
 
 EXPLORE THE COLLECTION
-Browse 70 bundled wallpapers. Filter by vivid or dark colors and by the collection's complexity categories, then preview and save a favorite.
+Browse 70 bundled wallpapers, filter by color and complexity, and preview and save a favorite.
 
-Wallpaper generation happens on your device and does not require an account or internet connection.
-
-After saving an image, choose it in your iPhone's Wallpaper settings to make it your Lock Screen or Home Screen background.
+Artwork generation runs on your device without an internet connection or an account. To use your saved artwork as a wallpaper, select it in your iPhone's Wallpaper settings.
 
 ## What's New
 
-A fresh look for your mathematical wallpaper studio:
+A fresh look for iWalle, our mathematical art studio:
+• Consistent iWalle branding throughout the app, matching the existing App Store listing.
+• A redesigned interface with a new app icon and a short opening animation.
+• A formula view for inspecting and copying the mathematical expressions behind generated artwork.
+• Sharper exports rendered using the same formulas as the preview.
+• Improved generation and saving, with clearer progress and protection against repeated taps.
 
-- A redesigned purple and black interface with a new app icon.
-- A short opening animation with stacking wallpaper cards.
-- A formula view for exploring and copying the red, green, and blue expressions behind your generated artwork.
-- Sharper wallpaper exports rendered from the same formulas as your preview.
-- Improved generation and saving, with clearer progress and protection against repeated taps.
-
-## Suggested keywords
+## Keywords
 
 wallpaper,abstract,math,generative,art,patterns,background,color,geometry
 
 ## App Review notes
 
-This is version 1.1 (build 2), an update to the existing mathematical wallpaper app listed as iWalle. No account, login, or test credentials are needed.
+This is an update to the existing iWalle app (Apple ID 1623764539). The app's mathematical generator began as an adaptation of a classroom exercise into a native iOS app.
 
-To test the main flow:
+Development history: the August 2020 commit includes the original Swift expression-tree generator and RGB canvas renderer:
+https://github.com/raguerraa/wally/commit/f89082e9aee25d7dc6305e845948d1cd0acdd1cd
 
-1. Open Studio from the menu if needed.
-2. Choose a complexity and tap Generate. Wait for the wallpaper to finish rendering.
-3. Tap View formula to inspect its Red, Green, and Blue expressions. Copy all formulas copies the text to the clipboard after a user action.
-4. Close the formula view and tap Save. The app requests permission to add the image to Photos when saving; it does not read the photo library.
-5. Open the menu and choose Collection to browse, filter, preview, and save one of the 70 bundled wallpapers.
-6. Tap Privacy Policy in the menu footer to open the published policy in the browser: https://github.com/raguerraa/wally/blob/master/docs/privacy-policy.md.
+Current implementation and documentation:
+https://github.com/raguerraa/wally
+https://github.com/raguerraa/wally/blob/master/docs/algorithm.md
 
-Wallpaper generation is performed on the device using mathematical expressions and works without an internet connection. It does not call an AI image-generation service. The separate privacy-policy link opens an external web page and requires a connection. The app has no analytics, advertising, or account service; its App Store privacy declaration is Data Not Collected.
+The Studio creates artwork on the device by generating three mathematical expression trees and evaluating them across the image, one for each RGB channel. The formula viewer displays the expressions used for that specific image. This is not an AI image-generation service. The opening animation is custom UIKit code; the reusable UI libraries are NVActivityIndicatorView and SideMenuSwift.
 
-Saving a generated wallpaper renders the same expressions at 1170 pixels wide, with the portrait aspect ratio of the canvas. The saved artwork excludes interface controls and preview shading.
+Reviewer walkthrough (no account or login required):
+1. Open Studio. Choose a complexity and tap Generate.
+2. Once generation finishes, tap View formula. Inspect Red, Green and Blue, including the explanations of coordinates and color mapping. Tap Copy all formulas to copy the expressions as text.
+3. Close the formula view, change complexity, and generate again to see a different composition and its formulas.
+4. Tap Save to render the same expressions at 1170 pixels wide and add the artwork to Photos. The saved image excludes interface controls and preview shading. Users apply the wallpaper in iOS settings.
+5. Collection is a separate gallery of 70 bundled wallpapers.
+6. The main menu provides a Privacy Policy link.
 
-The app saves images to Photos. It does not set the system wallpaper automatically; the user applies a saved image through iPhone Wallpaper settings.
+Regarding Guideline 4.3(a), the original implementation and dated development history are provided above for assessment of the app's provenance and distinct mathematical creation workflow. The app name in the replacement build is standardized to iWalle, matching the existing listing. The underlying mathematical creation workflow is unchanged by this naming correction.
 
 ## Internal accuracy notes
 
