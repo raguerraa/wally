@@ -1,6 +1,6 @@
 import UIKit
 
-/// One palette and a small set of controls keep every screen feeling like iWallee.
+/// One palette and a small set of controls keep every screen feeling like iWalle.
 enum StudioTheme {
     static let background = UIColor(hex: 0x08060D)
     static let surface = UIColor(hex: 0x15101F)
@@ -29,7 +29,7 @@ enum StudioTheme {
     }
 
     static func logoView(size: CGFloat) -> UIImageView {
-        let imageView = UIImageView(image: UIImage(named: "iWalleeMark"))
+        let imageView = UIImageView(image: UIImage(named: "iWalleMark"))
         imageView.contentMode = .scaleAspectFit
         imageView.layer.cornerRadius = size * 0.22
         imageView.clipsToBounds = true

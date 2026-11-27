@@ -2,9 +2,9 @@
 
 [Back to the README](../README.md) · [Algorithm](algorithm.md) · [Development](development.md)
 
-iWallee is an offline UIKit app for portrait iPhone use. It follows MVC-inspired responsibilities: controllers coordinate interaction, expression trees model the mathematics, and views display results. Historical folder names mix these roles; `CanvasV` also owns rendering.
+iWalle is an offline UIKit app for portrait iPhone use. It follows MVC-inspired responsibilities: controllers coordinate interaction, expression trees model the mathematics, and views display results. Historical folder names mix these roles; `CanvasV` also owns rendering.
 
-The product is **iWallee**; its workspace, scheme, and module retain the internal name **RandomArt**.
+The product is **iWalle**; its workspace, scheme, and module retain the internal name **RandomArt**.
 
 ## Components and ownership
 
@@ -42,7 +42,7 @@ The introduction is not a progress indicator. Generation and saving finish throu
 
 `CanvasVC` acquires its busy state before requesting generation, blocking duplicate Generate or Save actions, including queued actions.
 
-`CanvasV` captures the selected depth and preview dimensions, then creates three trees on its serial queue, `iwallee.wallpaper.render`. For every pixel, the renderer evaluates those trees at normalized coordinates and writes an opaque RGBA byte buffer. A `CGContext` converts the buffer into a `CGImage`.
+`CanvasV` captures the selected depth and preview dimensions, then creates three trees on its serial queue, `iwalle.wallpaper.render`. For every pixel, the renderer evaluates those trees at normalized coordinates and writes an opaque RGBA byte buffer. A `CGContext` converts the buffer into a `CGImage`.
 
 On the main queue, the successful result becomes `currentEquations`, its average color is sent to the naming delegate, and the image is assigned to `layer.contents`. The completion is delivered through a `CATransaction` completion block. The controller then stops the activity indicator and restores the controls.
 

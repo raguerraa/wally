@@ -49,7 +49,7 @@ class CanvasV: UIView {
     // This changes with the displayed image, not when the next complexity is selected.
     var currentFormulas: WallpaperFormulas? { currentEquations?.formulas }
 
-    private let renderingQueue = DispatchQueue(label: "iwallee.wallpaper.render", qos: .userInitiated)
+    private let renderingQueue = DispatchQueue(label: "iwalle.wallpaper.render", qos: .userInitiated)
 
     override func awakeFromNib() {
         super.awakeFromNib()

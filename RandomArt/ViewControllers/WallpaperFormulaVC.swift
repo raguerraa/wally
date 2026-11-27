@@ -215,7 +215,7 @@ final class WallpaperFormulaVC: UIViewController {
 
     @objc private func copyAllFormulas() {
         UIPasteboard.general.string = """
-        \(wallpaperName.isEmpty ? "iWallee wallpaper" : wallpaperName)
+        \(wallpaperName.isEmpty ? "iWalle wallpaper" : wallpaperName)
         Expression depth: \(formulas.depth)
 
         R(x,y) = \(formulas.red)

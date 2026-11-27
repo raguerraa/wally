@@ -4,7 +4,7 @@
 
 ## Release identity
 
-The prepared release is **1.1 (build 2)**. App Store Connect history was checked against the existing 1.0 (build 1) release before choosing these values. The 1.1 draft has passed Add for Review validation and is **Ready for Review**, with one draft submission whose item is ready to submit. **Submit for Review** is enabled and has been left for the user.
+The prepared release is **1.1 (build 2)**. App Store Connect history was checked against the existing 1.0 (build 1) release before choosing these values. The 1.1 (2) submission was rejected on November 25, 2026 under Guideline 4.3(a). The local branding correction to **iWalle** is newer than the submitted binary; a subsequent upload requires a new build number.
 
 | Setting | Release value |
 | --- | --- |
@@ -29,7 +29,7 @@ An unused `fileprivate` image-storage helper previously wrote to `UserDefaults`.
 
 Apple's [TN3181](https://developer.apple.com/documentation/technotes/tn3181-debugging-invalid-privacy-manifest) explains that empty accessed-API declarations should be removed and that a nontracking app can set `NSPrivacyTracking` to `false` while omitting tracking domains. [TN3184](https://developer.apple.com/documentation/technotes/tn3184-adding-data-collection-details-to-your-privacy-manifest) describes adding collected-data entries when data is collected. A syntactically valid plist still needs accurate keys and values.
 
-The Photos purpose text in Info.plist says: “iWallee saves wallpapers you choose to your photo library.” Photos are added when the user requests a save; the app does not read their photo library.
+The updated local Photos purpose text in Info.plist says: “iWalle saves wallpapers you choose to your photo library.” Photos are added when the user requests a save; the app does not read their photo library.
 
 The policy source is [docs/privacy-policy.md](privacy-policy.md). After the user approved its publication and contact information, it was published on public `master` in commit `6f8bc0be19c618b8aefebe990ff999debc9f5eaf`. An anonymous HTTP request returned 200 and verified the policy title, Photos and formula-copying sections, and approved contact information.
 
@@ -49,11 +49,11 @@ The final signed Release archive for generic iOS succeeded with Xcode 26.2 and t
 
 The archive uses the existing Apple Development identity and development provisioning profile. The subsequent App Store export and upload succeeded through the configured Xcode account and automatic-signing workflow. Xcode handles distribution signing during export; [cloud-managed signing](https://developer.apple.com/help/account/certificates/cloud-managed-certificates/) is also available through the Organizer distribution flow.
 
-The final archive is `~/Library/Developer/Xcode/Archives/2026-11-18/iWallee-1.1-build2-final-20261118-222447.xcarchive`. Its build/upload logs, verification results, backups, and `ExportOptions.plist` are outside the repository in `~/Library/Developer/Xcode/iWalleeReleasePreparation/1.1-build2-final-20261118-222447/`. The path date follows the Mac’s local clock.
+The submitted build 2 archive is retained under `~/Library/Developer/Xcode/Archives/2026-11-18/`. Its build/upload logs and export options are retained separately in Xcode’s local release-preparation folder. These are historical records of the submitted binary.
 
 The completed export/upload used `method = app-store-connect`, `destination = upload`, automatic signing, the existing team, symbol upload, and `manageAppVersionAndBuildNumber = false` to preserve the chosen identifiers. Internal-only TestFlight distribution was disabled so the build remains eligible for an App Store release.
 
-Xcode reported **Upload succeeded** and **EXPORT SUCCEEDED**, with exit code 0, on November 19, 2026 at 06:26 UTC. Apple subsequently processed the build, and **1.1 (2)** is selected in the App Store Connect draft. Add for Review validation passed. Apple’s review has not been submitted or completed.
+Xcode reported **Upload succeeded** and **EXPORT SUCCEEDED**, with exit code 0, on November 19, 2026 at 06:26 UTC. Apple subsequently processed the build, and **1.1 (2)** is selected in the App Store Connect draft. Add for Review validation passed. The owner submitted the draft; Apple rejected it on November 25, 2026 under Guideline 4.3(a).
 
 The upload returned two future-requirement warnings: starting April 2027, it says uploads and distribution submissions must use the iOS 27 SDK included in Xcode 27 or later, and iOS apps must target iOS 15 or later. These warnings did not prevent this upload. Recheck Apple’s current requirements before a later release.
 
@@ -70,15 +70,15 @@ The upload returned two future-requirement warnings: starting April 2027, it say
 - App Store Connect export/upload completed successfully, build processing completed, and build 2 is selected for version 1.1.
 - The approved privacy policy was published and verified publicly with an anonymous HTTP 200 response.
 - Five screenshots and the listing/review metadata persisted in App Store Connect.
-- Add for Review validation passed; the draft submission item is ready to submit.
+- Add for Review validation passed; the draft was ready to submit before the owner submitted it.
 
 ## Submission handoff
 
-App Store Connect initially blocked new-version creation with an Agreement Update modal. The Apple Developer account subsequently showed that the updated agreement had been accepted on November 18, 2026. The agreement block was cleared, the iOS 1.1 draft was created, and the draft has now passed Add for Review validation.
+App Store Connect initially blocked new-version creation with an Agreement Update modal. The Apple Developer account subsequently showed that the updated agreement had been accepted on November 18, 2026. The agreement block was cleared, the iOS 1.1 draft was created, and the draft passed Add for Review validation before submission.
 
 The existing listing name **iWalle** was preserved. The subtitle is **Wallpapers made with math**. All five screenshots, the release metadata, and App Review contact details are saved in App Store Connect. The age-rating questionnaire is complete with a **4+** rating, the privacy declaration remains **Data Not Collected**, and **manual release** is selected. Private account and review-contact details are maintained in App Store Connect.
 
-The live state is **Ready for Review**, with **Draft Submissions (1)** and an item marked **Ready to Submit**. **Submit for Review** is enabled and has not been clicked. The final review submission remains the user’s action. If Apple approves the version, manual release leaves **Release This Version** as a separate user action. No beta-group assignment has been performed.
+The owner submitted version 1.1 (2). Apple rejected it under Guideline 4.3(a) on November 25, 2026. The local naming correction does not change the uploaded binary or resolve the rejection by itself. No new build has been uploaded or resubmitted. Manual release remains selected.
 
 The App Store Connect privacy-policy field retains the existing URL, https://iwalle-privacypolicy.web.app/, at the owner’s request. The replacement GitHub policy is public and is used by the in-app menu button. The older hosted page contains generic diagnostic-data and personal-information wording that does not match the audited app; its text should be reconciled with the current policy. The attempted URL change did not persist in App Store Connect, so the existing URL was left in place and the release draft was restored for the owner’s review.
 

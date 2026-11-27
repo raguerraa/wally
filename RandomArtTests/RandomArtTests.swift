@@ -3,6 +3,13 @@ import UIKit
 @testable import RandomArt
 
 final class RandomArtTests: XCTestCase {
+    @MainActor
+    func testProductBrandingMatchesAppStoreName() {
+        let appBundle = Bundle(for: CanvasVC.self)
+        XCTAssertEqual(appBundle.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String, "iWalle")
+        XCTAssertNotNil(UIImage(named: "iWalleMark", in: appBundle, compatibleWith: nil))
+    }
+
     func testGeneratedExpressionsStayInRGBRange() {
         for depth in [1, 2, 4, 7, 11] {
             let tree = MathBinaryTree(depth: depth)

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild iWallee's explanatory figures (optional docs tooling).
+"""Rebuild iWalle's explanatory figures (optional docs tooling).
 
 Requires NumPy and Matplotlib. These are not iOS app dependencies.
 The examples use the app's current coordinate domain and active operators.
@@ -69,7 +69,7 @@ def rgb_example():
         image_axis(fig, [0.045 + index * 0.235, 0.22, 0.205, 0.56], pixels,
                    title, captions[index])
     fig.text(0.045, 0.055,
-             "Illustrative formulas using iWallee’s active operations with k = π. Coordinates: 0 ≤ x,y < 1; y increases downward.",
+             "Illustrative formulas using iWalle’s active operations with k = π. Coordinates: 0 ≤ x,y < 1; y increases downward.",
              fontsize=10, color=MUTED)
     fig.savefig(OUT / "algorithm-rgb.png", facecolor=BG)
     plt.close(fig)

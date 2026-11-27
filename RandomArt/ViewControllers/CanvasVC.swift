@@ -60,7 +60,7 @@ class CanvasVC: UIViewController {
         pin(shade, to: root)
 
         let brand = UIStackView(arrangedSubviews: [
-            StudioTheme.label("iWallee", size: 22, weight: .bold),
+            StudioTheme.label("iWalle", size: 22, weight: .bold),
             eyebrow("WALLPAPER STUDIO", color: StudioTheme.secondaryText)
         ])
         brand.axis = .vertical

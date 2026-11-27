@@ -40,12 +40,12 @@ xcodebuild -workspace RandomArt.xcworkspace \
 Use a simulator ID from that output:
 
 ~~~sh
-IWALLEE_SIMULATOR_ID='<simulator UUID>'
+IWALLE_SIMULATOR_ID='<simulator UUID>'
 
 xcodebuild -workspace RandomArt.xcworkspace \
   -scheme RandomArt \
   -configuration Debug \
-  -destination "platform=iOS Simulator,id=$IWALLEE_SIMULATOR_ID" \
+  -destination "platform=iOS Simulator,id=$IWALLE_SIMULATOR_ID" \
   CODE_SIGNING_ALLOWED=NO \
   -parallel-testing-enabled NO \
   test

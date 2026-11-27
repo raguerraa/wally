@@ -28,7 +28,7 @@ final class MathBinaryTree {
     private let root: Node<MathOperation>
 
     // Deliberately keep the original generator's operation set to preserve
-    // the familiar visual character of existing iWallee wallpapers.
+    // the familiar visual character of existing iWalle wallpapers.
     private static let generatedOperations: [MathOperation] = [
         .multiply, .average, .cosine, .sine
     ]

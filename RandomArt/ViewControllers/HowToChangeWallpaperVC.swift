@@ -53,7 +53,7 @@ class HowToChangeWallpaperVC: UIViewController {
         ))
         content.addArrangedSubview(instruction(
             number: "02", title: "Save the one you love",
-            body: "Tap Save in Studio, or Save to Photos in the Collection, and allow iWallee to add the image to your library. Wait for the saved confirmation before leaving."
+            body: "Tap Save in Studio, or Save to Photos in the Collection, and allow iWalle to add the image to your library. Wait for the saved confirmation before leaving."
         ))
         content.addArrangedSubview(instruction(
             number: "03", title: "Give it a home",

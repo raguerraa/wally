@@ -23,7 +23,7 @@ final class WallpaperLaunchAnimationView: UIView {
     private var previousAccessibilityHidden = false
     private var usesReducedMotion = false
     private let glow = CAGradientLayer()
-    private let titleLabel = StudioTheme.label("iWallee", size: 27, weight: .bold)
+    private let titleLabel = StudioTheme.label("iWalle", size: 27, weight: .bold)
 
     override init(frame: CGRect) {
         super.init(frame: frame)

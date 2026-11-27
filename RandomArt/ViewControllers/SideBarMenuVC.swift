@@ -2,7 +2,7 @@
 //  SideBarMenuVC.swift
 //  RandomArt
 //
-//  Purple-and-black navigation for the iWallee studio.
+//  Purple-and-black navigation for the iWalle studio.
 //
 
 import UIKit
@@ -61,7 +61,7 @@ class SideBarMenuVC: UIViewController {
 
         let logo = StudioTheme.logoView(size: 52)
         profileView = logo
-        let title = StudioTheme.label("iWallee", size: 25, weight: .bold)
+        let title = StudioTheme.label("iWalle", size: 25, weight: .bold)
         title.numberOfLines = 0
         let subtitle = StudioTheme.label("MATH INTO ART", size: 10, weight: .semibold,
                                         color: StudioTheme.lavender)

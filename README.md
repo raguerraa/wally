@@ -1,22 +1,24 @@
 <p align="center">
-  <img src="RandomArt/Assets.xcassets/iWalleeMark.imageset/iWalleeMark.png" width="96" alt="iWallee's purple wave logo">
+  <img src="RandomArt/Assets.xcassets/iWalleMark.imageset/iWalleMark.png" width="96" alt="iWalle's purple wave logo">
 </p>
 
-<h1 align="center">iWallee</h1>
+<h1 align="center">iWalle</h1>
 
 <p align="center"><strong>A wallpaper studio where every color comes from an equation.</strong></p>
 
 <p align="center">Swift · UIKit · Recursive expression trees · Offline rendering</p>
 
-iWallee turns randomly assembled mathematical expressions into colorful iPhone wallpapers. Each image has three functions: one for red, one for green, and one for blue. Evaluate them across a canvas and an abstract composition appears—sometimes a soft gradient, sometimes a field of waves, sometimes a dense pattern.
+iWalle turns randomly assembled mathematical expressions into colorful iPhone wallpapers. Each image has three functions: one for red, one for green, and one for blue. Evaluate them across a canvas and an abstract composition appears—sometimes a soft gradient, sometimes a field of waves, sometimes a dense pattern.
 
-The project began when **Ronald Guerra** adapted a classroom exercise he enjoyed into an iOS app. Its repository history begins in August 2020. The product name is **iWallee**; the repository is `wally`, while the Xcode workspace, scheme, and module still use **RandomArt**.
+The project began when **Ronald Guerra** adapted a classroom exercise he enjoyed into an iOS app. Its repository history begins in August 2020. The product name is **iWalle**; the repository is `wally`, while the Xcode workspace, scheme, and module still use **RandomArt**.
 
 ## A look inside
 
+The preview media below documents the previously submitted build. Its screenshots and recording predate the current spelling correction; refresh them from the final build before the next store submission.
+
 <p align="center">
   <img src="docs/images/opening.gif" width="240" alt="Four mathematical wallpaper cards arriving one after another and settling into a stack">
-  <img src="docs/images/studio.png" width="240" alt="The purple and black iWallee studio showing a generated wallpaper and its controls">
+  <img src="docs/images/studio.png" width="240" alt="The purple and black iWalle studio showing a generated wallpaper and its controls">
   <img src="docs/images/formula.png" width="240" alt="The formula sheet showing the red channel's mathematical expression">
 </p>
 
@@ -59,12 +61,12 @@ This project belongs to the **Random Art** tradition of making images from mathe
 
 | Work | Connection to the idea |
 | --- | --- |
-| [Karl Sims, *Artificial Evolution for Computer Graphics* (1991)](https://www.karlsims.com/papers/siggraph91-backup.html) and [*Genetic Images* (1993)](https://www.karlsims.com/genetic-images.html) | Symbolic expressions generated pictures; selection and evolution produced new generations. iWallee does not implement that evolutionary process. |
+| [Karl Sims, *Artificial Evolution for Computer Graphics* (1991)](https://www.karlsims.com/papers/siggraph91-backup.html) and [*Genetic Images* (1993)](https://www.karlsims.com/genetic-images.html) | Symbolic expressions generated pictures; selection and evolution produced new generations. iWalle does not implement that evolutionary process. |
 | [UC San Diego CSE 130, Random Art assignment (2005)](https://cseweb.ucsd.edu/classes/fa05/cse130/pa1/pa1.html) | A classroom exercise used coordinate leaves and recursive multiplication, average, sine, and cosine—very close to the educational pattern in this project. |
 | [Christopher A. Stone, Nifty Assignments: Random Art (2009)](https://nifty.stanford.edu/2009/stone-random-art/) | An approachable teaching assignment using recursive expressions and RGB images. It explicitly credits Andrej Bauer's Random Art as inspiration. |
-| [Andrej Bauer's Random Art](https://www.random-art.org/about/) and [Python tutorial (2010)](https://math.andrej.com/2010/04/21/random-art-in-python/) | A public generator and an explanation of how randomly built expressions become images. Bauer's named generator uses the name as a seed; iWallee currently does not. |
+| [Andrej Bauer's Random Art](https://www.random-art.org/about/) and [Python tutorial (2010)](https://math.andrej.com/2010/04/21/random-art-in-python/) | A public generator and an explanation of how randomly built expressions become images. Bauer's named generator uses the name as a seed; iWalle currently does not. |
 
-There are real differences between implementations. Several teaching versions use coordinates and outputs in `[-1, 1]`; iWallee samples coordinates in `[0, 1)`, uses absolute trigonometric results, and generates three separate trees. Its wallpaper name is assigned afterward and does not reproduce the image. See [history and implementation differences](docs/algorithm.md#history-and-implementation-differences) for details and original sources.
+There are real differences between implementations. Several teaching versions use coordinates and outputs in `[-1, 1]`; iWalle samples coordinates in `[0, 1)`, uses absolute trigonometric results, and generates three separate trees. Its wallpaper name is assigned afterward and does not reproduce the image. See [history and implementation differences](docs/algorithm.md#history-and-implementation-differences) for details and original sources.
 
 ## Architecture
 
